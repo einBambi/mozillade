@@ -1,0 +1,306 @@
+/*
+ * 
+ * resetting (Eric Meyer 2.0) 
+ *
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*
+ *
+ * clearing
+ *
+ */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+*:first-child+html .clearfix { min-height: 0; }
+* html .clearfix { height: 1%; }
+.clear {
+	clear: both;
+}
+
+
+/* 
+ *
+ * global styling
+ * 
+ */
+html {
+	height: 100%;
+}
+body {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	line-height: 18px;
+	height: 100%;
+}
+#wrapper {
+    min-height: 100%;
+    position: relative;	
+}
+p {
+	margin: 7px 0;
+}
+
+
+
+/* 
+ *
+ * global link styles
+ * 
+ */
+a {
+	color: #A5151E;
+	text-decoration: none;	
+}
+a:visted {
+	color: #000;	
+}
+a:hover {
+	color: #FF1A00;
+}
+
+
+
+/*
+ * 
+ * header
+ * 
+ */
+header {
+	height: 175px;
+	background: #333;
+	border-bottom: 10px solid #A5151E;
+}
+header a {
+	color: #C9E0E8;	
+}
+header a:hover {
+	color: #fff;
+}
+#headerbar {
+    background: #3A3A3A;
+    border-bottom: 1px solid #222;
+    padding: 5px 0;
+}
+#headerbar ul {
+	float: right;	
+}
+#headerbar ul li {
+	float: left;
+	margin: 0 15px;	
+}
+#headerbar ul li a {
+	padding-left: 20px;
+	color: #fff;
+	background: url(../img/icons/dino.png) no-repeat;
+}
+#headerbar ul li a:hover {
+	text-decoration: underline;
+}
+#header-wrapper {
+	width: 1025px;
+	margin: 0 auto;
+}
+header .logo {
+	float: left;
+	margin: 20px;
+}
+#navigation {
+	float: left;
+	margin: 103px 0 0;
+}  
+#navigation ul li {
+	float: left;
+	margin: 0 15px;
+}
+#navigation ul li a {
+	font-size: 16px;
+	} 
+
+
+
+/*
+ * 
+ * general content styling
+ * 
+ */
+#content-wrapper {
+	width: 1025px;
+	margin: 0 auto;
+	padding: 0 0 150px;
+	background: url(../img/bg/content.png) repeat-y;
+	color: #000; 
+}
+#content {
+    width: 810px;
+    padding: 35px 0;
+    float: left;
+}
+#content h1 {
+	font-size: 26px;
+	font-style: italic;
+}
+#content h2 {
+	font-size: 22px;
+	margin: 25px 0;
+	font-style: italic;
+}
+#content h3 {
+	font-size: 22px;
+	font-style: italic;
+	margin: 0 0 7px;
+}
+
+/*
+ * 
+ * sidebar
+ * 
+ */
+#sidebar {
+	float: left;
+    padding: 15px 10px;
+    width: 195px;
+}
+
+#sidebar h2 {
+	padding: 0 0 15px;
+	font-size: 18px;
+    font-style: italic;
+}
+#planet dd {
+	color: #888;
+    font-style: italic;
+    margin: 0 0 15px;
+    padding: 5px 0 0 5px;
+}
+#planet {
+	padding: 0 0 0 5px;
+}
+#planet dd a.author {
+    color: #888;
+}
+#planet dd a.author:hover {
+    text-decoration: underline;
+}
+#planetlink {
+	text-align: right;
+}
+
+
+/*
+ * 
+ * footer
+ * 
+ */
+footer {
+    position: absolute;
+    bottom: 0;
+    background: #333;
+    border-top: 10px solid #A5151E;
+    width: 100%;
+    height: 150px;
+    color: #fff;
+}
+#footer-wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 20px;
+}	
+footer a {
+	color: #C9E0E8;	
+}
+footer a:hover {
+	color: #fff;
+}
+footer .copyright {
+	font-size: 12px;
+	line-height: 12px;
+}
+
+
+/*
+ * 
+ * home
+ * 
+ */
+section.product {
+    float: left;
+    width: 250px;
+    margin: 0 20px 25px 0;
+}
+section.product img {
+	float: left;
+}
+section.product .title {
+	float: left;
+	padding: 20px 0 0 5px;
+}
+section.product p {
+	clear: both;
+	padding: 8px 0 0;
+}
+section.product h2 {
+	font-size: 22px;
+}
+section.product .download {
+	font-style: italic;
+	color: #888;
+}
+section.product .download:hover {
+	color: #000;
+}
+.intro {
+	margin: 20px 0 25px;
+}
+.intro p {
+    font-size: 16px;
+}
