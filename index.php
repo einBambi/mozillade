@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="/mitmachen/" title="Entdecke Möglichkeiten bei Mozilla mitzumachen">Mitmachen!</a></li>
                     <li><a href="/ueber/" title="Mehr über Mozilla im deutschsprachigen Raum erfahren">Über Uns</a></li>
-                    <li><a href="http://beta.elchi3.de/planet/" title="Neuigkeiten aus der deutschsprachigen Mozilla-Welt lesen">Planet Mozilla</a></li>
+                    <li><a href="http://planet.mozilla.de" title="Neuigkeiten aus der deutschsprachigen Mozilla-Welt lesen">Planet Mozilla</a></li>
                 </ul>
             </nav>
         </div>
