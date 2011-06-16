@@ -78,7 +78,7 @@ html {
 }
 body {
 	font-family: Georgia, serif;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 18px;
 	height: 100%;
 }
@@ -86,8 +86,11 @@ body {
     min-height: 100%;
     position: relative;	
 }
+em {
+	font-style: italic;
+}
 p {
-	margin: 7px 0;
+	margin: 7px 0 20px;
 }
 
 
@@ -159,14 +162,14 @@ header .logo {
 }
 #navigation {
 	float: left;
-	margin: 103px 0 0;
+	margin: 100px 0 0;
 }  
 #navigation ul li {
 	float: left;
-	margin: 0 15px;
+	margin: 0 20px;
 }
 #navigation ul li a {
-	font-size: 16px;
+	font-size: 20px;
 	} 
 
 
@@ -184,18 +187,19 @@ header .logo {
 	color: #000; 
 }
 #content {
-    width: 810px;
-    padding: 35px 0;
+    width: 740px;
+    padding: 35px 70px 25px 0;
     float: left;
 }
 #content h1 {
 	font-size: 26px;
 	font-style: italic;
+	margin: 0 0 15px;
 }
 #content h2 {
 	font-size: 22px;
-	margin: 25px 0;
 	font-style: italic;
+	margin: 20px 0;
 }
 #content h3 {
 	font-size: 22px;
@@ -215,26 +219,25 @@ header .logo {
 }
 
 #sidebar h2 {
-	padding: 0 0 15px;
 	font-size: 18px;
     font-style: italic;
 }
-#planet dd {
+dl#planet dd {
 	color: #888;
     font-style: italic;
     margin: 0 0 15px;
     padding: 5px 0 0 5px;
 }
-#planet {
-	padding: 0 0 0 5px;
+dl#planet {
+	padding: 15px 0 0 5px;
 }
-#planet dd a.author {
+dl#planet dd a.author {
     color: #888;
 }
-#planet dd a.author:hover {
+dl#planet dd a.author:hover {
     text-decoration: underline;
 }
-#planetlink {
+dl#planetlink {
 	text-align: right;
 }
 
@@ -256,7 +259,6 @@ footer {
 #footer-wrapper {
 	width: 1024px;
 	margin: 0 auto;
-	padding: 20px;
 }	
 footer a {
 	color: #C9E0E8;	
@@ -268,8 +270,8 @@ footer a:hover {
 	color: #fff;
 }
 footer .copyright {
-	font-size: 12px;
-	line-height: 12px;
+	font-size: 13px;
+	line-height: 16px;
 }
 
 
@@ -278,6 +280,10 @@ footer .copyright {
  * home
  * 
  */
+#home #content {
+	padding: 35px 0 0;
+	width: 810px;
+}
 section.product {
     float: left;
     width: 250px;
@@ -304,9 +310,46 @@ section.product .download {
 section.product .download:hover {
 	color: #000;
 }
-.intro {
-	margin: 20px 0 25px;
+
+
+/*
+ * 
+ * mitmachen
+ * 
+ */
+ dl.mitmachen {
+	margin: 30px 0;
+ }
+ dl.mitmachen dt {
+	float: left;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+	margin: 0 25px 0 0;
+ }
+ dl.mitmachen .project-name {
+	font-size: 16px;
+	margin-bottom: 7px;
+	display: block;
+ }
+ dl.mitmachen dd {
+    display: block;
+    float: left;
+    width: 580px;
+	padding: 20px 0 0;
+ }
+
+
+/*
+ * 
+ * über
+ * 
+ */
+#kontakt dt {
+	margin: 15px 0 0;
 }
-.intro p {
-    font-size: 16px;
+#photo {
+	margin: 40px 0 20px;
+	text-align: center;
 }
+
