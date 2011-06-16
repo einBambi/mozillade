@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^([A-Za-z0-9-]+)/?$ index.php?site=$1 [L]
