@@ -296,6 +296,10 @@ section.product .title {
 	float: left;
 	padding: 20px 0 0 5px;
 }
+section.product .title h3 a {
+	color: #000;
+}
+
 section.product p {
 	clear: both;
 	padding: 8px 0 0;

@@ -1,4 +1,4 @@
-            <h1>In der deutschsprachigen Mozilla Community mitwirken</h1>
+            <h1>In der deutschsprachigen Mozilla-Community mitwirken</h1>
 			<h2>Auf den Projektseiten fündig geworden?</h2>
 			<div class="intro">
 				<p>Schön, wenn wir ein Problem lösen oder eine Frage beantworten konnten. All diese Angebote sind Ergebnis der Arbeit von freiwilligen Helfern.
