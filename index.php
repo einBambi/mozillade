@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="" />
-    <title>Deutschsprachige Mozilla-Community &bull; mozilla.de</title>
+    <title>Die deutschsprachige Mozilla-Community &bull; mozilla.de</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="alternate" href="http://planet.mozilla.de/atom.xml" title="Mozilla.de Planet-Feed abonnieren" type="application/atom+xml">

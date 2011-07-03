@@ -1,4 +1,4 @@
-            <h1>Deutschsprachige Mozilla-Community</h1>
+            <h1>Die deutschsprachige Mozilla-Community</h1>
        	    <p>Im Internet surfen, E-Mails schreiben, Termine verwalten, Webseiten erstellen… Täglich verwenden
        	    Millionen Nutzer Anwendungen der weltweiten Mozilla-Community – auch im deutschsprachigen Raum.</p>
        	    <p>Auf den Seiten der verschiedenen Übersetzungsprojekte finden sich alle notwendigen Informationen.
