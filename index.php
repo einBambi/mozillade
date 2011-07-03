@@ -24,7 +24,7 @@
     	    </a>
     	    <nav id="navigation">
                 <ul>
-                    <li><a href="/" title="Zur Startseite wechseln">Home</a></li>
+                    <li><a href="/" title="Zur Startseite wechseln">Start</a></li>
                     <li><a href="/mitmachen/" title="Möglichkeiten, bei Mozilla mitzumachen">Mitmachen!</a></li>
                     <li><a href="/ueber/" title="Mehr über Mozilla im deutschsprachigen Raum erfahren">Über Uns</a></li>
                     <li><a href="http://planet.mozilla.de" title="Neuigkeiten aus der deutschsprachigen Mozilla-Welt lesen">Planet Mozilla (de)</a></li>
