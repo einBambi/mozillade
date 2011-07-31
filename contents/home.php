@@ -5,6 +5,7 @@
        	    Dort besteht auch die Möglichkeit, sich in Foren auszutauschen und so individuelle Unterstützung
        	    bei Fragen im Umgang mit Firefox, Thunderbird & Co zu erhalten.</p>
         	<h2>Projekte</h2>
+			<div id="projects" class="clearfix">
             <section id="firefox" class="product">
                 <a href="http://www.camp-firefox.de"><img src="/img/logos/firefox.png" alt="Firefox-Logo" /></a>
                 <div class="title">
@@ -50,4 +51,5 @@
                     <a class="download" href="http://kompozer-web.de/">Download</a>
                 </div>
                 <p>KompoZer, der intuitive Webeditor mit grafischer Benutzeroberfläche und Echtzeitvorschau zum Erstellen von Internetseiten.</p>
-            </section>     
+            </section>
+			</div>     
