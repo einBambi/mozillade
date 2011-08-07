@@ -1,4 +1,4 @@
-<?php $site=$_GET['site']; ?>
+<?php $site=htmlspecialchars($_GET['site'], ENT_QUOTES); ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="de-DE" id="mozilla-de">
 <head>
