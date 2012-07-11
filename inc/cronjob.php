@@ -5,12 +5,13 @@ $i = 0;
 $count = 5;
 
 ob_start();
+echo "<ul>";
 
 foreach ($planet->entry as $entry) {
 
 	if ($i < $count) {
 
-		echo "\t".'<dt><a class="post" href="'.htmlspecialchars($entry->link["href"]).'">'.$entry->title.'</a></dt>'."\n";
+		echo "\t".'<li><a class="post" href="'.htmlspecialchars($entry->link["href"]).'">'.$entry->title.'</a>'."\n";
 		
 		foreach ($entry->source->link as $link) {
 			if ($link["type"] == "text/html" && $link["rel"] == "alternate") {
@@ -18,12 +19,12 @@ foreach ($planet->entry as $entry) {
 			}
 		}
 
-		echo "\t".'<dd>von <a class="author" href="'.$source.'">'.$entry->author->name.'</a></dd>'."\n";
+		echo "\t".'<dd>von <a class="author" href="'.$source.'">'.$entry->author->name.'</a></li>'."\n";
 
 		$i++;
 
 	} else {
-
+echo "</ul>";
 		break;
 
 	}
