@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="de-DE" id="mozilla-de">
 <head>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Die deutschsprachige Mozilla-Community &bull; <?=($site !='') ? ucwords($site) : 'mozilla.de' ?></title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css?ver=1.1" />
+    <link href="tabzilla.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="alternate" href="http://planet.mozilla.de/atom.xml" title="Mozilla.de Planet-Feed abonnieren" type="application/atom+xml">
     <!--[if lte IE 8]>
@@ -14,19 +16,17 @@
     <![endif]-->
 </head>
 <body id="<?=($site == '') ? 'home' : $site ?>">
+<a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
 <div id="wrapper">
-
-    <header>
         <nav id="headerbar" class="clearfix">
             <ul>
                 <li><a href="http://www.mozilla-europe.org">mozilla-europe.org</a></li>
                 <li><a href="http://www.mozilla.org">mozilla.org</a></li>
             </ul>
-        </nav>
-        <div id="header-wrapper" class="clearfix">
-        	<a class="logo" href="/" title="Zur Startseite wechseln">
-        	    <img src="/img/logos/mozilla.png" alt="Mozilla-Logo" />
-    	    </a>
+        </nav><center>
+        			<h1>Wir sind <img src="mozillade.png" width="492" height="85"/></h1>
+                    <h2>Die deutschsprachige Mozilla-Community</h2></center>
+    <header>
     	    <nav id="navigation">
                 <ul>
 <?php 
@@ -35,16 +35,20 @@
 		0 => array( 
 			'href' => '/', 
 			'title' => 'Zur Startseite wechseln',
-			'text' => 'Start'),		
+			'text' => 'Start'),	
 		1 => array( 
 			'href' => '/mitmachen/', 
 			'title' => 'Möglichkeiten, bei Mozilla mitzumachen',
-			'text' => 'Mitmachen!'),	
+			'text' => 'Hilfe'),
 		2 => array( 
+			'href' => '/mitmachen/', 
+			'title' => 'Möglichkeiten, bei Mozilla mitzumachen',
+			'text' => 'Mitmachen!'),	
+		3 => array( 
 			'href' => '/kalender/', 
 			'title' => 'Community-Kalender',
-			'text' => 'Kalender'),		
-		3 => array( 
+			'text' => 'Events'),		
+		4 => array( 
 			'href' => '/ueber/', 
 			'title' => 'Mehr über Mozilla im deutschsprachigen Raum erfahren',
 			'text' => 'Über Uns')
@@ -82,10 +86,15 @@
     
     <footer>
         <div id="footer-wrapper">
-            <p>Auch mozilla.de ist <a href="https://github.com/atopal/mozillade">quelloffen</a>.</p>
-            <p class="copyright">Sofern nicht anders vermerkt, steht der Inhalt dieser Seite unter der <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> oder einer späteren Version. Mozilla®, mozilla.org®, Thunderbird®, SeaMonkey® und das Mozilla-Logo™ sind <a href="http://www.mozilla.org/foundation/trademarks/list.html">eingetragene Markenzeichen</a> der Mozilla Foundation.</p>
-	       	<p><a href="/impressum/">Impressum</a></p>
+        <a href="http://mozilla.de/" class="footer-logo"><img src="http://www.mozilla.org/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+            <p class="text">Auch mozilla.de ist <a href="https://github.com/atopal/mozillade">quelloffen</a>.
+            Sofern nicht anders vermerkt, steht der Inhalt dieser Seite unter der <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> oder einer späteren Version. Mozilla®, mozilla.org®, Thunderbird®, SeaMonkey® und das Mozilla-Logo™ sind <a href="http://www.mozilla.org/foundation/trademarks/list.html">eingetragene Markenzeichen</a> der Mozilla Foundation.
+	       	<br><br><a href="/impressum/">Impressum</a></p>
+	       	<p class="space">    </p>
         </div>
+        <script src="tabzilla.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/
+jquery/1.4.4/jquery.min.js"></script>
     </footer>
     
 </div>
