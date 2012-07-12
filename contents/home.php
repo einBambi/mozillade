@@ -55,7 +55,7 @@
        <h3><a href="http://seamonkey.at/"><img src="/img/logos/seamonkey.png" width="50px" height="50px" alt="SeaMonkey-Logo" />
             SeaMonkey
             </a></h3>
-                <p>SeaMonkey ist ein Gesamtpaket welches aus Browser, E-Mail, Newsgroups, Webseiten-Editor und Chat besteht.</p>
+                <p>SeaMonkey ist ein Gesamtpaket welches aus Browser, E-Mail, Newsgroups, Webseiten-Editor und Chat besteht.<br></p>
             <a class="button" href="http://seamonkey.at/download/">Download</a>
       </li>
        <li>

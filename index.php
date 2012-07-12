@@ -16,7 +16,8 @@
     <![endif]-->
 </head>
 <body id="<?=($site == '') ? 'home' : $site ?>">
-<a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
+<!-- <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a> -->
+<a href="/" id="tabzilla">mozilla</a>
 <div id="wrapper">
         <nav id="headerbar" class="clearfix">
             <ul>
@@ -37,8 +38,8 @@
 			'title' => 'Zur Startseite wechseln',
 			'text' => 'Start'),	
 		1 => array( 
-			'href' => '/mitmachen/', 
-			'title' => 'Möglichkeiten, bei Mozilla mitzumachen',
+			'href' => '/hilfe/', 
+			'title' => 'Haben Sie Probleme mit Firefox & Co.? Wir helfen Ihnen weiter!',
 			'text' => 'Hilfe'),
 		2 => array( 
 			'href' => '/mitmachen/', 
