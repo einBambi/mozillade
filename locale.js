@@ -58,7 +58,7 @@
 
     Tabzilla.l10n = { // The entire localization string tree
 
-        "now"   : "en", // The current-locale, default to en
+        "now"   : "de", // The current-locale, default to en
 
         "all"   : { // List of all available locale
             "en":       "English",

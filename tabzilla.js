@@ -71,7 +71,6 @@
  * @license   http://www.mozilla.org/MPL/MPL-1.1.html Mozilla Public License 1.1
  * @author    Michael Gauthier <mike@silverorange.com>
  * @author    Steven Garrity <steven@silverorange.com>
- * @author    Soumya Deb <debloper@gmail.com>
  */
 
 function Tabzilla()
@@ -86,31 +85,29 @@ function Tabzilla()
 Tabzilla.READY_POLL_INTERVAL = 40;
 Tabzilla.readyInterval = null;
 Tabzilla.jQueryCDNSrc =
-    'http://www.mozilla.org/media/js/libs/jquery-1.7.1.min.js';
+    '//www.mozilla.org/media/js/libs/jquery-1.7.1.min.js';
+
 Tabzilla.LINK_TITLE = {
-    CLOSED: "Mozilla links",
-    OPENED: "Close (Esc)"
+    CLOSED: 'Mozilla links',
+    OPENED: 'Close (Esc)'
 }
 
-Tabzilla.hasCSSTransitions = (function() {
-    var div = document.createElement('div');
-    div.innerHTML = '<div style="'
-        + '-webkit-transition: color 1s linear;'
-        + '-moz-transition: color 1s linear;'
-        + '-ms-transition: color 1s linear;'
-        + '-o-transition: color 1s linear;'
-        + '"></div>';
+/**
+ * Whether or not Tabzilla is in small mode
+ *
+ * @var Boolean
+ */
+Tabzilla.smallMode = false;
 
-    var hasTransitions = (
-           (div.firstChild.style.webkitTransition !== undefined)
-        || (div.firstChild.style.MozTransition !== undefined)
-        || (div.firstChild.style.msTransition !== undefined)
-        || (div.firstChild.style.OTransition !== undefined)
-    );
-
-    delete div;
-
-    return hasTransitions;
+/**
+ * Whether or not min/max width media queries are supported in CSS
+ *
+ * If not supported, the small mode is never triggered.
+ *
+ * @var Boolean
+ */
+Tabzilla.hasMediaQueryWidths = (function(){
+    return !(/MSIE\ (4|5|6|7|8)/.test(navigator.userAgent));
 })();
 
 /**
@@ -225,17 +222,15 @@ Tabzilla.ready = function()
 
 Tabzilla.init = function()
 {
-    if (!Tabzilla.hasCSSTransitions) {
-        // add easing functions
-        jQuery.extend(jQuery.easing, {
-            'easeInOut':  function (x, t, b, c, d) {
-                if (( t /= d / 2) < 1) {
-                    return c / 2 * t * t + b;
-                }
-                return -c / 2 * ((--t) * (t - 2) - 1) + b;
+    // add easing functions
+    jQuery.extend(jQuery.easing, {
+        'easeInOut':  function (x, t, b, c, d) {
+            if (( t /= d / 2) < 1) {
+                return c / 2 * t * t + b;
             }
-        });
-    }
+            return -c / 2 * ((--t) * (t - 2) - 1) + b;
+        }
+    });
 
     Tabzilla.link  = document.getElementById('tabzilla');
     Tabzilla.panel = Tabzilla.buildPanel();
@@ -258,12 +253,14 @@ Tabzilla.init = function()
     Tabzilla.$panel.removeClass('tabzilla-opened');
     Tabzilla.$link.removeClass('tabzilla-opened');
 
-    Tabzilla.$panel.attr("tabindex","-1");
+    // make panel unfocusable
+    Tabzilla.$panel.attr('tabindex', '-1');
+
     Tabzilla.$link.attr({
-        "role": "button",
-        "aria-expanded": "false",
-        "aria-controls": Tabzilla.$panel.attr("id"),
-        "title": Tabzilla.LINK_TITLE.CLOSED
+        'role'          : 'button',
+        'aria-expanded' : 'false',
+        'aria-controls' : Tabzilla.$panel.attr('id'),
+        'title'         : Tabzilla.LINK_TITLE.CLOSED
     });
 
     Tabzilla.opened = false;
@@ -280,11 +277,16 @@ Tabzilla.init = function()
         }
     });
     Tabzilla.$panel.keypress(function(e) {
-        if (e.which === 13) {
+        if (e.which === 13 && !Tabzilla.smallMode) {
             Tabzilla.toggle();
             Tabzilla.$link.focus();
         }
     });
+
+    if (Tabzilla.hasMediaQueryWidths) {
+        jQuery(window).resize(Tabzilla.handleResize);
+        Tabzilla.handleResize();
+    }
 };
 
 Tabzilla.buildPanel = function()
@@ -328,20 +330,24 @@ Tabzilla.open = function()
         return;
     }
 
-    if (Tabzilla.hasCSSTransitions) {
-        Tabzilla.$panel.addClass('tabzilla-opened');
-        Tabzilla.$link.addClass('tabzilla-opened');
-        Tabzilla.$panel.removeClass('tabzilla-closed');
-        Tabzilla.$link.removeClass('tabzilla-closed');
-    } else {
-        // jQuery animation fallback
-        jQuery(Tabzilla.panel).animate({ height: 200 }, 200, 'easeInOut').toggleClass("open");;
-    }
-    
-    Tabzilla.$link.attr({
-        "aria-expanded": "true",
-        "title": Tabzilla.LINK_TITLE.OPENED
-    });
+    Tabzilla.$panel.toggleClass('open');
+
+    var $content = Tabzilla.$panel.children('#tabzilla-contents');
+    var height = $content.height();
+
+    Tabzilla.$panel
+        .animate({ 'height' : height }, 200, 'easeInOut', function() {
+            Tabzilla.$panel.css('height', 'auto');
+        });
+
+    Tabzilla.$link
+        .attr({
+            'aria-expanded' : 'true',
+            'title'         : Tabzilla.LINK_TITLE.OPENED
+        })
+        .addClass('tabzilla-opened')
+        .removeClass('tabzilla-closed');
+
     Tabzilla.$panel.focus();
     Tabzilla.opened = true;
 };
@@ -352,23 +358,21 @@ Tabzilla.close = function()
         return;
     }
 
-    if (Tabzilla.hasCSSTransitions) {
-        Tabzilla.$panel.removeClass('tabzilla-opened');
-        Tabzilla.$link.removeClass('tabzilla-opened');
-        Tabzilla.$panel.addClass('tabzilla-closed');
-        Tabzilla.$link.addClass('tabzilla-closed');
-    } else {
-        // jQuery animation fallback
-        jQuery(Tabzilla.panel).animate({ height: 0 }, 200, 'easeInOut', function(){
-            $(this).toggleClass("open");
+    // jQuery animation fallback
+    Tabzilla.$panel
+        .animate({ height: 0 }, 200, 'easeInOut', function() {
+            Tabzilla.$panel.toggleClass('open');
         });
-        
-    }
 
-    Tabzilla.$link.attr({
-        "aria-expanded": "false",
-        "title": Tabzilla.LINK_TITLE.CLOSED
-    });
+    Tabzilla.$link
+        .attr({
+            'aria-expanded' : 'false',
+            'title'         : Tabzilla.LINK_TITLE.CLOSED
+        })
+        .addClass('tabzilla-closed')
+        .removeClass('tabzilla-opened');
+
+
     Tabzilla.opened = false;
 };
 
@@ -381,54 +385,195 @@ Tabzilla.preventDefault = function(ev)
     }
 };
 
+Tabzilla.handleResize = function(e)
+{
+    var width = jQuery(window).width();
+    if (width <= 719 && !Tabzilla.smallMode) {
+        Tabzilla.enterSmallMode();
+    }
+
+    if (width > 719 && Tabzilla.smallMode) {
+        Tabzilla.leaveSmallMode();
+    }
+};
+
+Tabzilla.toggleSmallMode = function()
+{
+    if (Tabzilla.smallMode) {
+        Tabzilla.leaveSmallMode();
+    } else {
+        Tabzilla.enterSmallMode();
+    }
+};
+
+Tabzilla.enterSmallMode = function()
+{
+    // add focusability to menu headers
+    jQuery('#tabzilla-nav h2')
+        .attr({
+            'role'          : 'menuitem',
+            'tabindex'      : '0',
+            'aria-expanded' : 'false',
+            'aria-haspopup' : 'true'
+        })
+        .each(function(i, e) {
+            var $menu = jQuery(e).siblings('ul');
+            var $item = jQuery(e);
+            Tabzilla.initSubmenu($item, $menu);
+            Tabzilla.closeSubmenu($item, $menu);
+        });
+
+    Tabzilla.smallMode = true;
+};
+
+Tabzilla.leaveSmallMode = function()
+{
+    // remove focusability from menu headers
+    jQuery('#tabzilla-nav h2')
+        .removeAttr('role')
+        .removeAttr('tabindex')
+        .removeAttr('aria-haspopup')
+        .removeAttr('aria-expanded')
+        .each(function(i, e) {
+            var $menu = jQuery(e).siblings('ul');
+            var $item = jQuery(e);
+            Tabzilla.denitSubmenu($item, $menu);
+
+        });
+
+    Tabzilla.smallMode = false;
+};
+
+Tabzilla.initSubmenu = function($item, $menu)
+{
+    $item.click(function(e) {
+        Tabzilla.toggleSubmenu($item, $menu);
+    });
+    $item.keyup(function(e) {
+        if (e.keyCode === 13) {
+            Tabzilla.preventDefault(e);
+            Tabzilla.toggleSubmenu($item, $menu);
+        }
+        if (e.keyCode === 39) {
+            Tabzilla.preventDefault(e);
+            Tabzilla.openSubmenu($item, $menu);
+        }
+        if (e.keyCode === 37) {
+            Tabzilla.preventDefault(e);
+            Tabzilla.closeSubmenu($item, $menu);
+        }
+    });
+    $menu.attr('role', 'menu');
+
+    var $items = $menu.find('a');
+    $items.attr('role', 'menuitem');
+};
+
+Tabzilla.denitSubmenu = function($item, $menu)
+{
+    $item.unbind('click');
+    $menu.removeAttr('role');
+    $menu.css('height', 'auto');
+
+    var $items = $menu.find('a');
+    $items
+        .removeAttr('role')
+        .removeAttr('tabindex')
+        .unbind('keypress');
+};
+
+Tabzilla.toggleSubmenu = function($item, $menu)
+{
+    if ($item.attr('aria-expanded') === 'true') {
+        Tabzilla.closeSubmenu($item, $menu);
+    } else {
+        Tabzilla.openSubmenu($item, $menu);
+    }
+};
+
+Tabzilla.openSubmenu = function($item, $menu)
+{
+    $item.attr('aria-expanded', 'true');
+
+    var $items = $menu.find('a');
+    $items.attr('tabindex', '0');
+
+    // get natural menu height
+    var height = 0;
+    $menu.find('li').each(function(i, e) {
+        height += jQuery(e).height() + 1;
+    });
+    height--;
+
+    $menu
+        .css('height', height + 'px')
+        .attr('aria-hidden', 'false');
+};
+
+Tabzilla.closeSubmenu = function($item, $menu)
+{
+    $item.attr('aria-expanded', 'false');
+
+    $menu
+        .css({
+            'overflow' : 'hidden',
+            'height'   : '0'
+        })
+        .attr('aria-hidden', 'true');
+
+    var $items = $menu.find('a');
+    $items.attr('tabindex', '-1');
+};
+
 Tabzilla.content =
     '<div id="tabzilla-contents">'
     + '  <div id="tabzilla-promo">'
-    + '    <div class="snippet" id="tabzilla-promo-beta">'
-    + '    <a href="http://www.mozilla.org/firefox/beta/?WT.mc_id=tzfxbeta&amp;WT.mc_ev=click">'
-    + '      <b>Download Firefox Beta</b>, provide feedback and help make the '
-    + '      next version of Firefox even more awesome.</a>'
+    + '    <div class="snippet" id="tabzilla-promo-mobile">'
+    + '    <a href="http://www.mozilla.org/firefox/fx/?WT.mc_id=tzfxmobile&amp;WT.mc_ev=click#mobile">'
+    + '     <h4>Schnell. Innovativ. Sicher.</h4>'
+    + '     <p>Holen Sie sich Firefox für Android »</p></a>'
     + '    </div>'
     + '  </div>'
     + '  <div id="tabzilla-nav">'
     + '    <ul>'
-    + '      <li><h2 class="tabzillaLocale" data-locale="titleMozilla">Mozilla</h2>'
+    + '      <li><h2>Mozilla</h2>'
     + '        <ul>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkMission" href="http://www.mozilla.org/mission/">Mission</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkAbout" href="http://www.mozilla.org/about/">About</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkProjects" href="http://www.mozilla.org/projects/">Projects</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkSupport" href="http://support.mozilla.org/">Support</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkMDN" href="https://developer.mozilla.org">Developer Network</a></li>'
+    + '          <li><a href="http://www.mozilla.org/mission/">Erfahren Sie mehr</a></li>'
+    + '          <li><a href="http://www.mozilla.org/about/">Über uns</a></li>'
+    + '          <li><a href="http://www.mozilla.org/projects/">Projekte</a></li>'
+    + '          <li><a href="http://support.mozilla.org/">Unterstützung</a></li>'
+    + '          <li><a href="https://developer.mozilla.org">Entwicklernetzwerk</a></li>'
     + '        </ul>'
     + '      </li>'
-    + '      <li><h2 class="tabzillaLocale" data-locale="titleProducts">Products</h2>'
+    + '      <li><h2>Projekte</h2>'
     + '        <ul>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkFirefox" href="http://www.mozilla.org/firefox">Firefox</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkThunderbird" href="http://www.mozilla.org/thunderbird">Thunderbird</a></li>'
+    + '          <li><a href="http://www.mozilla.org/firefox">Firefox</a></li>'
+    + '          <li><a href="http://www.mozilla.org/thunderbird">Thunderbird</a></li>'
+    + '          <li><a href="http://www.mozilla.org/b2g">Boot to Gecko</a></li>'
     + '        </ul>'
     + '      </li>'
-    + '      <li><h2 class="tabzillaLocale" data-locale="titleInnovation">Innovations</h2>'
+    + '      <li><h2>Innovationen</h2>'
     + '        <ul>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkWebFWD" href="https://webfwd.org/">WebFWD</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkLabs" href="http://mozillalabs.com/">Labs</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkWebmaker" href="https://www.mozilla.org/webmaker/">Webmaker</a></li>'
+    + '          <li><a href="https://webfwd.org/">WebFWD</a></li>'
+    + '          <li><a href="http://mozillalabs.com/">Labs</a></li>'
+    + '          <li><a href="https://www.mozilla.org/webmaker/">Webmaker</a></li>'
     + '        </ul>'
     + '      </li>'
-    + '      <li><h2 class="tabzillaLocale" data-locale="titleGetInvolved">Get Involved</h2>'
+    + '      <li><h2>Mitmachen</h2>'
     + '        <ul>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkVolunteer" href="http://www.mozilla.org/contribute/">Volunteer</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkCareers" href="http://www.mozilla.org/en-US/about/careers.html">Careers</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkFindUs" href="http://www.mozilla.org/en-US/about/mozilla-spaces/">Find us</a></li>'
-    + '          <li><a class="tabzillaLocale" data-locale="linkJoinUs" href="https://donate.mozilla.org/">Join us</a></li>'
+    + '          <li><a href="http://www.mozilla.org/contribute/">Helfen Sie uns</a></li>'
+    + '          <li><a href="http://www.mozilla.org/en-US/about/careers.html">Jobangebote</a></li>'
+    + '          <li><a href="http://www.mozilla.org/en-US/about/mozilla-spaces/">Finden Sie uns</a></li>'
+    + '          <li><a href="https://donate.mozilla.org/">Machen Sie mit</a></li>'
     + '        </ul>'
     + '      </li>'
     + '      <li id="tabzilla-search">'
-    + '        <a class="tabzillaLocale" data-locale="linkWebDir" href="http://www.mozilla.org/community/directory.html">Website Directory</a>'
+    + '        <a href="http://www.mozilla.org/community/directory.html">Webseitenverzeichnis</a>'
     + '        <form title="Search Mozilla sites" role="search" action="http://www.google.com/cse">'
     + '          <input type="hidden" value="002443141534113389537:ysdmevkkknw" name="cx">'
     + '          <input type="hidden" value="FORID:0" name="cof">'
-    + '          <label for="q">Search</label>'
-    + '          <input type="search" placeholder="Search" id="q" name="q">'
+    + '          <label for="q">Suche</label>'
+    + '          <input type="search" placeholder="Suche" id="q" name="q">'
     + '        </form>'
     + '      </li>'
     + '    </ul>'

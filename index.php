@@ -16,12 +16,13 @@
     <![endif]-->
 </head>
 <body id="<?=($site == '') ? 'home' : $site ?>">
+<div id="back">
 <!-- <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a> -->
 <a href="/" id="tabzilla">mozilla</a>
 <div id="wrapper">
         <nav id="headerbar" class="clearfix">
             <ul>
-                <li><a href="http://www.mozilla-europe.org">mozilla-europe.org</a></li>
+                <li><a href="http://www.mozilla-europe.org">Firefox</a></li>
                 <li><a href="http://www.mozilla.org">mozilla.org</a></li>
             </ul>
         </nav><center>
@@ -98,6 +99,7 @@
 jquery/1.4.4/jquery.min.js"></script>
     </footer>
     
+</div>
 </div>
 </body>
 </html>

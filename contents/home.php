@@ -31,9 +31,11 @@
          }
      }
 </script>
-        	<h2>Projekte</h2>
+
 			<div id="projects-column">
 			<section class="projects-block" id="apps">
+        	<h2>Projekte</h2>	
+  <p class="intro">Auf den Seiten der Übersetzungsprojekte finden sich alle Informationen. Dort besteht auch die Möglichkeit, sich in Foren auszutauschen.</p>
     	<ul>
         <li>
             <h3><a href="http://www.camp-firefox.de">
@@ -55,7 +57,7 @@
        <h3><a href="http://seamonkey.at/"><img src="/img/logos/seamonkey.png" width="50px" height="50px" alt="SeaMonkey-Logo" />
             SeaMonkey
             </a></h3>
-                <p>SeaMonkey ist ein Gesamtpaket welches aus Browser, E-Mail, Newsgroups, Webseiten-Editor und Chat besteht.<br></p>
+                <p>SeaMonkey ist ein Gesamtpaket welches aus Browser, E-Mail, Newsgroups, Webseiten-Editor und Chat besteht.</p>
             <a class="button" href="http://seamonkey.at/download/">Download</a>
       </li>
        <li>
