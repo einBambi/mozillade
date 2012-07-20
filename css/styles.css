@@ -5,9 +5,9 @@
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-body {min-width:1000px; border-top: 2px solid #fff;}
+body {min-width:1024px; border-top: 2px solid #fff;}
 
-#back {position:absolute; min-height:100%; width:100%; z-index:-1; background: rgb(245,241,232) url('http://www.mozilla.org/media/img/sandstone/bg-sand.png') repeat-x top center;}
+#back {min-width:1024px; position:absolute; min-height:100%; width:100%; z-index:-1; background: rgb(245,241,232) url('http://www.mozilla.org/media/img/sandstone/bg-sand.png') repeat-x top center;}
 
 @font-face {
 	font-family: "OpenSans";
@@ -160,7 +160,7 @@ position:relative;
 float:left;
 }
 
-#things{
+#sachen{
 position:absolute;
 
 width:400px;
@@ -170,7 +170,7 @@ color: rgb(255, 255, 255);
 font-size:34px;
 text-shadow: 0px 1px 0px rgba(72,72,72, 0.75);
 text-decoration: none; margin-top:56px; margin-right:28px; font-family:"Open Sans Light",sans-serif; text-decoration:none;
-}.textItem{position:absolute;display:none;}
+}.aktivitaet{position:absolute;display:none;}
 
 .intro{float:left;width:344px}
 
@@ -181,7 +181,7 @@ text-decoration: none;
 text-shadow: 0px 1px 0px rgba(0,0,0,0.25);
 font: 14px/22px 'OpenSans-Reg', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 position:absolute;
-margin-top:-8px;
+margin-top:-18px;
 letter-spacing: -0.25px;
 height: 22px; 
 width: 90px; 
@@ -383,7 +383,7 @@ margin-left:0;
 
 #projects-column p.intro {
 color:rgb(72,72,72);
-margin-top:20px;
+margin-top:26px;
 padding-bottom:12px;
 }
 
