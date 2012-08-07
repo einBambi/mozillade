@@ -22,7 +22,7 @@
 <div id="wrapper">
         <nav id="headerbar" class="clearfix">
             <ul>
-                <li><a href="http://www.mozilla-europe.org">Firefox</a></li>
+                <li><a href="http://www.mozilla.com/de/firefox/">Firefox</a></li>
                 <li><a href="http://www.mozilla.org">mozilla.org</a></li>
             </ul>
         </nav><center>
@@ -39,21 +39,25 @@
 			'title' => 'Zur Startseite wechseln',
 			'text' => 'Start'),	
 		1 => array( 
-			'href' => '/hilfe/', 
+			'href' => '?site=hilfe', 
 			'title' => 'Haben Sie Probleme mit Firefox & Co.? Wir helfen Ihnen weiter!',
 			'text' => 'Hilfe'),
 		2 => array( 
-			'href' => '/mitmachen/', 
+			'href' => '?site=mitmachen', 
 			'title' => 'Möglichkeiten, bei Mozilla mitzumachen',
 			'text' => 'Mitmachen!'),	
 		3 => array( 
-			'href' => '/kalender/', 
+			'href' => '?site=kalender', 
 			'title' => 'Community-Kalender',
 			'text' => 'Events'),		
 		4 => array( 
-			'href' => '/ueber/', 
+			'href' => '?site=ueber', 
 			'title' => 'Mehr über Mozilla im deutschsprachigen Raum erfahren',
-			'text' => 'Über Uns')
+			'text' => 'Über Uns'),
+		5 => array( 
+			'href' => '?site=404', 
+			'title' => 'Fehlerseite',
+			'text' => '404 (Test)')
 	);
 
 	foreach ($links as $val) {
@@ -67,38 +71,13 @@
                     <li><a href="http://planet.mozilla.de" title="Neuigkeiten aus der deutschsprachigen Mozilla-Welt lesen">Planet Mozilla (de)</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
     
     <div id="content-wrapper" class="clearfix"> 
     
         <section id="content">
 <?php require_once("inc/contents.php"); ?>        	    
-        </section>
-    
-        <aside id="sidebar">
-            <h2>Neuigkeiten <a href="http://planet.mozilla.de/atom.xml" title="Atom Feed abonnieren"><img src="/img/icons/feed.png" alt="Feed" /></a></h2>
-            <dl id="planet">
-<?php require_once("inc/planet.html"); ?>
-            </dl>
-            <p id="planetlink">&raquo; <a href="http://planet.mozilla.de">planet.mozilla.de</a></p>
-        </aside> 
-        
-    </div>
-    
-    <footer>
-        <div id="footer-wrapper">
-        <a href="http://mozilla.de/" class="footer-logo"><img src="http://www.mozilla.org/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
-            <p class="text">Auch mozilla.de ist <a href="https://github.com/mozjan/mozillade">quelloffen</a>.
-            Sofern nicht anders vermerkt, steht der Inhalt dieser Seite unter der <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> oder einer späteren Version. Mozilla®, mozilla.org®, Thunderbird®, SeaMonkey® und das Mozilla-Logo™ sind <a href="http://www.mozilla.org/foundation/trademarks/list.html">eingetragene Markenzeichen</a> der Mozilla Foundation.
-	       	<br><br><a href="/impressum/">Impressum</a></p>
-	       	<p class="space">    </p>
-        </div>
-        <script src="tabzilla.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/
-jquery/1.4.4/jquery.min.js"></script>
-    </footer>
-    
+
 </div>
 </div>
 </body>

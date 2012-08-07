@@ -11,7 +11,7 @@ foreach ($planet->entry as $entry) {
 
 	if ($i < $count) {
 
-		echo "\t".'<li><img src="http://www.gravatar.com/avatar/'.md5(strtolower(trim($entry->author->name))).'?d=&s=40" /><a class="post" href="'.htmlspecialchars($entry->link["href"]).'">'.$entry->title.'</a>'."\n";
+		echo "\t".'<li><a class="post" href="'.htmlspecialchars($entry->link["href"]).'">'.$entry->title.'</a>'."\n";
 		
 		foreach ($entry->source->link as $link) {
 			if ($link["type"] == "text/html" && $link["rel"] == "alternate") {
@@ -30,7 +30,7 @@ echo "</ul>";
 	}
 }
 
-$cache = fopen('planet.html', 'w');
+$cache = fopen('planet2.html', 'w');
 fwrite($cache, ob_get_clean());
 fclose($cache);
 

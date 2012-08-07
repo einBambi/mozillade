@@ -7,7 +7,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {min-width:1024px; border-top: 2px solid #fff;}
 
-#back {min-width:1024px; position:absolute; min-height:100%; width:100%; z-index:-1; background: rgb(245,241,232) url('http://www.mozilla.org/media/img/sandstone/bg-sand.png') repeat-x top center;}
+
+#back {min-width:1024px; position:absolute; min-height:100%; width:100%; z-index:-1; background: url('http://www.mozilla.org/media/img/sandstone/bg-sand.png') repeat-x top center rgb(245,241,232);}
 
 @font-face {
 	font-family: "OpenSans";
@@ -19,7 +20,7 @@ body {min-width:1024px; border-top: 2px solid #fff;}
 	src: url(OpenSans-Regular.ttf) format("truetype");
 	}
 	
-.huge, .large, h1, h2, h3, h4 {font-family: 'OpenSans', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; font-weight: normal; text-shadow: 0px 1px 0px rgba(255,255,255,0.75);}
+.huge, .large, h1, h2, h3, h4, h6 {font-family: 'OpenSans', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; font-weight: normal; text-shadow: 0px 1px 0px rgba(255,255,255,0.75);}
 .huge {font-size: 108px; letter-spacing: -4px; line-height: 100%;}
 .large {font-size: 72px; letter-spacing: -3px; line-height: 100%;}
 h1 {
@@ -30,8 +31,9 @@ color: rgb(72,72,72);
 margin-top: 30px;
 }
 h2 {font-size: 48px; letter-spacing: -2px; line-height: 100%; color: rgb(72,72,72);}
-h3 {font-size: 28px; letter-spacing: -0.5px; line-height: 100%;}
+h3 {font-size: 28px; letter-spacing: -0.5px; line-height: 100%; color: rgb(72,72,72);}
 h4 {font-size: 24px; letter-spacing: -0.25px; line-height: 100%;}
+h6 {font-size: 56px; letter-spacing: -2px; line-height: 100%; color: rgb(72,72,72);}
 .small, small {	font-size: 12px; line-height: 100%;}
 
 /*
@@ -55,7 +57,6 @@ h4 {font-size: 24px; letter-spacing: -0.25px; line-height: 100%;}
  * header
  */
 header { min-height: 72px; text-align: center; margin: 35px 150px; font-size: 14pt; background:  rgb(255,255,255) url('wallpaper.png') repeat-x top center; background-color: white;
-
 -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 0px 12px 0px rgba(0, 0, 0, 0.05), inset 0px 0px 48px 0px rgba(255,255,255,1), inset 0px -2px 0px 0px rgba(0,0,0,0.05);
 -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 0px 12px 0px rgba(0, 0, 0, 0.05), inset 0px 0px 48px 0px rgba(255,255,255,1), inset 0px -2px 0px 0px rgba(0,0,0,0.05);
 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 0px 12px 0px rgba(0, 0, 0, 0.05), inset 0px 0px 48px 0px rgba(255,255,255,1), inset 0px -2px 0px 0px rgba(0,0,0,0.05);
@@ -103,19 +104,7 @@ text-decoration:underline;}
 /*
  * home
  */
-#projects { padding: 1em 0 0; }
-.product#firefox, .product#thunderbird { width: 45%; margin: 0 5% 0 0; }
-.product#seamonkey { width: 30%; } 
-.product#lightning { width: 35%; } 
-.product#kompozer { width: 32%; } 
-.product { float: left; margin: 0 0.5%; }
-.product img { float: left; }
-.product .title { float: left; padding: 20px 0 0 5px; }
-.product .title h3 a { color: #000; }
-.product p { clear: both; padding: 8px 0 0; }
-.product h2 { font-size: 22px; }
-.product .download { font-style: italic;	color: #888; }
-.product .download:hover { color: #000; }
+
 
 /*
  * ueber
@@ -125,18 +114,16 @@ text-decoration:underline;}
 /*
  * mitmachen
  */
-dl.mitmachen { margin: 30px 0; }
-dl.mitmachen dt { float: left; font-weight: bold; text-align: center; min-width: 100px; width: 15%; margin: 0 5% 0 0; }
-dl.mitmachen .project-name { font-size: 16px; margin-bottom: 7px; display: block; }
-dl.mitmachen dd { display: block; float: left; width: 75%; padding: 20px 0 0; }
+ul.mitmachen { margin: 30px 0; }
 
 /*
  * sidebar
  */
-#sidebar { float: left; width: 19%; padding: 30.3% 1% 0; }
-#sidebar h2 { font-family: "Open Sans Light",sans-serif; font-size:32px; font-weight:300; padding: 0 0.2em }
-dl#planet dd { color: #888; font-style: italic; margin: 0 0 0px; padding: 0 0 0 15px; }
+#sidebar { float: left; width: 19%; position:absolute; margin-left:760px; margin-top:328px;}
+#sidebar h2 { font-family: "Open Sans Light",sans-serif; font-size:32px; font-weight:300; padding: 0 0.2em; top:0px; }
+dl#planet dd { color: #888; font-style: italic; margin: 0 0 0px; margin-right:50px; }
 dl#planet { padding: 0px 0 0 5px; }
+dl#planet img { position:absolute; margin-left:-60px; margin-top:4px; border: 1px solid rgb(214,214,214); border-radius: 0.25em;}
 dl#planet a.post { text-decoration:none; color:rgb(175,50,50);
 font-family: "Open Sans Light",sans-serif; font-weight:300; }
 dl#planet ul {zoom:1px; clear:left; color:rgb(51,51,51); }
@@ -153,6 +140,7 @@ p#planetlink {	text-align: right; text-decoration:none; color:rgb(175,50,50);
 font-family: "Open Sans Light",sans-serif; font-weight:300;}
 p#planetlink a {	text-align: right; text-decoration:none; color:rgb(175,50,50);
 font-family: "Open Sans Light",sans-serif; font-weight:300;}
+p#planetlink a:hover {	text-decoration:underline;}
 p#planetlink.visited {	color:rgb(175,20,20);}
 
 #com {
@@ -190,13 +178,9 @@ text-align: center;
 color: white;
 border-bottom: none;
 margin-left:92px;
-
-
-
 -webkit-border-radius: 0.25em;
 -moz-border-radius: 0.25em;
 border-radius: 0.25em;
-
 -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1);
 -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1);
 box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1); 
@@ -386,6 +370,89 @@ color:rgb(72,72,72);
 margin-top:26px;
 padding-bottom:12px;
 }
+/*
+ * mitmachen
+ */
+div#mitmachenul h2 {
+float:left;
+width:152px;
+margin-left:0;
+margin-bottom:24px;
+}
+
+div#mitmachenul ul {
+zoom:1px;
+clear:left;
+color:rgb(51,51,51);
+}
+
+div#mitmachenul li {
+list-style-type:none;
+margin:0 0 24px;
+border-top:1px dotted #d6d6d6;
+padding-top:24px;
+zoom:1px;
+width:700px;
+}
+
+div#mitmachenul p {
+margin-top:6px;
+}
+
+div#mitmachenul a.button:hover {
+text-decoration:none;
+cursor:default;
+}
+
+div#mitmachenul li.more {
+border:0;
+padding-top:0;
+}
+
+div#mitmachenul h3 a {
+float:left;
+width:252px;
+margin-left:0;
+padding-top:18px;
+clear:left;
+font-size:24px;
+color:rgb(175,50,50);
+font-family: "Open Sans Light",sans-serif;
+font-weight:300;
+font-size:24px;
+text-decoration:none;
+height:92px;
+}
+
+div#mitmachenul a:hover {
+text-decoration:underline;
+}
+
+div#mitmachenul h3 span {
+display:block;
+font-size:18px;
+letter-spacing:normal;
+}
+
+div#mitmachenul h3 img {
+background:#fff;
+width:50px;
+height:50px;
+padding:8px;
+border:1px solid #d6d6d6;
+-moz-border-radius:.25em;
+border-radius:.25em;
+-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.1);
+-moz-box-shadow:0 2px 4px rgba(0,0,0,0.1);
+box-shadow:0 2px 4px rgba(0,0,0,0.1);
+float:left;
+margin:-18px 24px 24px 0;
+}
+
+div#mitmachenul a {
+color:rgb(175,50,50);
+text-decoration:none;
+} 
 
 /*
  * footer
@@ -406,24 +473,149 @@ footer a:hover { color:#20679e; }
 footer a img {margin-top:-22px; margin-left:64px;}
 footer p {margin-left:400px;}
 .text {margin-top:-26px;}
+p#uebertext {margin-top:8px; color:rgb(51,51,51); width:512px;}
+ul#kontakt {margin-top:24px; color:rgb(51,51,51); width:512px;}
+ul#kontakt li {
+list-style-type:none;
+margin:0 0 8px;
+border-top:1px dotted #d6d6d6;
+padding-top:6px;
+}
+ul#kontakt a {	text-align: right; text-decoration:none; color:rgb(175,50,50);
+font-family: "Open Sans Light",sans-serif; font-weight:300;}
+ul#kontakt a:hover {text-decoration:underline;}
+ul#kontakt.visited {	color:rgb(175,20,20);}
+p#moeg {color:rgb(136,136,136); font-style:italic;}
+img#team {width:96%; border: 8px solid white; -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 0px 12px 0px rgba(0, 0, 0, 0.05), inset 0px 0px 48px 0px rgba(255,255,255,1), inset 0px -2px 0px 0px rgba(0,0,0,0.05);
+-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 0px 12px 0px rgba(0, 0, 0, 0.05), inset 0px 0px 48px 0px rgba(255,255,255,1), inset 0px -2px 0px 0px rgba(0,0,0,0.05);
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 0px 12px 0px rgba(0, 0, 0, 0.05), inset 0px 0px 48px 0px rgba(255,255,255,1), inset 0px -2px 0px 0px rgba(0,0,0,0.05);
+}
+p#photo {width:516px; color:rgb(100,100,100);}
+h6 {margin-left:-6px;}
+
+/*
+ * hilfe
+ */
+ 
+div#hilfe ul {
+zoom:1px;
+clear:left;
+color:rgb(51,51,51);
+}
+
+div#hilfe li {
+list-style-type:none;
+margin:0 0 92px;
+border-top:1px dotted #d6d6d6;
+padding-top:24px;
+zoom:1px;
+width:200px;
+}
+
+div#hilfe p {
+margin-top:6px;
+}
+
+div#hilfe a.button:hover {
+text-decoration:none;
+cursor:default;
+}
+
+div#hilfe li.more {
+border:0;
+padding-top:0;
+}
+
+div#hilfe h3 a {
+float:left;
+width:252px;
+margin-left:0;
+padding-top:18px;
+clear:left;
+font-size:24px;
+color:rgb(175,50,50);
+font-family: "Open Sans Light",sans-serif;
+font-weight:300;
+font-size:24px;
+text-decoration:none;
+height:92px;
+}
+
+div#hilfe a:hover {
+text-decoration:underline;
+}
+
+div#hilfe h3 span {
+display:block;
+font-size:18px;
+letter-spacing:normal;
+}
+
+div#hilfe h3 img {
+background:#fff;
+width:50px;
+height:50px;
+padding:8px;
+border:1px solid #d6d6d6;
+-moz-border-radius:.25em;
+border-radius:.25em;
+-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.1);
+-moz-box-shadow:0 2px 4px rgba(0,0,0,0.1);
+box-shadow:0 2px 4px rgba(0,0,0,0.1);
+float:left;
+margin:-18px 24px 24px 0;
+}
+
+div#hilfe a {
+
+text-decoration:none;
+} 
 
 /*
  * device-specific styles
 
 @media screen and (max-width: 1024px) {
-	#navigation { margin: 33px 0 0; width: 60%; }
-	#navigation ul li a { display: block; padding: 5px 0; }
-	#navigation ul li .aktiv { padding: 5px; display: block; }
-	#content-wrapper { background: none }
-	#content, #sidebar { float: none; width: 94%; padding: 1.5em 3% 0; }
+
 }
 
 @media screen and (max-width: 800px) {
-	#navigation { margin: 33px 0 0; width: 60%; }
-	#navigation ul li a { display: block; padding: 5px 0; }
-	#navigation ul li .aktiv { padding: 5px; display: block; }
-	#content-wrapper { background: none }
-	#content, #sidebar { float: none; width: 94%; padding: 1.5em 3% 0; }
+	header {width:800px;}
+	h1 {
+font-size:82px;
+letter-spacing:-4px;
+line-height:100%;
+color: rgb(72,72,72);
+margin-top: 30px;
+}
+h1 img {
+width:376px;
+height:65px;
+}
+h2 {font-size: 36px; letter-spacing: -2px; line-height: 100%; color: rgb(72,72,72);}
+}
+@media screen and (max-width: 600px) {
+	body {min-width:400px;}
+	#header-wrapper { padding: 1.5em 0; text-align: center; }
+	header .logo { float: none; }
+	#navigation { margin: 0; width: 100%; }
+	#navigation ul li { float: none; padding: 1% 0; }
+	#navigation ul li a { background: #222; display: block; width: 100%; padding: 5px 0; }
+	#content h1 { text-align: center; }
+	.product { float: none; margin: 0; width: 94% !important; }
+	dl.mitmachen dt { float: none; text-align: center; width: 100%; }
+	dl.mitmachen dd { float: none; width: 100%; }
+	.projects-block p {font-size:0px;}
+	.projects-block {width:240px;}
+	a.button {visibility:hidden;}
+	.projects-block li {margin:0px 0px 88px;}
+	#sidebar {margin-left:280px;}
+	img#com {width:0%;}
+	p#pic {font-size:0px;}
+	p.text {margin-left:20px; width:400px;}
+	a.footer-logo{width:0%; visibility:hidden;}
+	#headerbar ul {float:left;}
+	#back {min-width:400px;}
+	header {min-width:400px; max-width: 600px;}
 }
 @media screen and (max-width: 400px) {
 	#header-wrapper { padding: 1.5em 0; text-align: center; }
@@ -432,9 +624,9 @@ footer p {margin-left:400px;}
 	#navigation ul li { float: none; padding: 1% 0; }
 	#navigation ul li a { background: #222; display: block; width: 100%; padding: 5px 0; }
 	#content h1 { text-align: center; }
-	#sidebar { border-top: 10px solid #A5151E; }
 	.product { float: none; margin: 0; width: 94% !important; }
 	dl.mitmachen dt { float: none; text-align: center; width: 100%; }
 	dl.mitmachen dd { float: none; width: 100%; }
 }
- */
+  */
+  

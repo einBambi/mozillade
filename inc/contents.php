@@ -1,6 +1,6 @@
 <?php
 
-$whitelist = array("home", "impressum", "kalender", "mitmachen", "ueber"); 
+$whitelist = array("home", "hilfe", "impressum", "kalender", "mitmachen", "ueber"); 
 
 if(isset($_GET['site'])) {
     
