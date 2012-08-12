@@ -2,11 +2,10 @@
  * General styles
  */
 * { margin: 0; padding: 0; }
-
+/* L */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
 body {min-width:1024px; border-top: 2px solid #fff;}
-
 
 #back {min-width:1024px; position:absolute; min-height:100%; width:100%; z-index:-1; background: url('http://www.mozilla.org/media/img/sandstone/bg-sand.png') repeat-x top center rgb(245,241,232);}
 
@@ -19,7 +18,11 @@ body {min-width:1024px; border-top: 2px solid #fff;}
 	font-family: "OpenSans-Reg";
 	src: url(OpenSans-Regular.ttf) format("truetype");
 	}
-	
+
+/*
+ * Headlines
+ */
+ 
 .huge, .large, h1, h2, h3, h4, h6 {font-family: 'OpenSans', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; font-weight: normal; text-shadow: 0px 1px 0px rgba(255,255,255,0.75);}
 .huge {font-size: 108px; letter-spacing: -4px; line-height: 100%;}
 .large {font-size: 72px; letter-spacing: -3px; line-height: 100%;}
@@ -69,6 +72,9 @@ header a:visited { color: rgb(150,25,25); }
 header a:hover { color: rgb(100,50,50); }
 #header-wrapper { min-width: 300px; max-width: 1025px; margin: 0 auto; padding: 1.5em 0; }
 
+/*
+ * Navigation Bar
+ */
 
 #navigation {
 text-align:center;
@@ -100,11 +106,6 @@ text-decoration:underline;}
 #content-wrapper { margin: 0 auto; max-width: 1025px; min-width: 300px; margin-top:-40px;}
 #content { padding: 1.5em 2% 0 1%; float: left; width: 76%; }
 #content h2 { top:20px; position:relative; font-family: "Open Sans Light",sans-serif; font-size:32px; font-weight:300;}
-
-/*
- * home
- */
-
 
 /*
  * ueber
@@ -162,6 +163,10 @@ text-decoration: none; margin-top:56px; margin-right:28px; font-family:"Open San
 
 .intro{float:left;width:344px}
 
+/*
+ * Fancy buttons
+ */
+ 
 	.button {
 
 display: block; 
@@ -237,7 +242,7 @@ transition-delay: 0s;
 text-decoration:none;
 
 }
-
+/* E */
 .button:active {
 
 -webkit-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.2), inset 0px 12px 24px 6px rgba(0,0,0,0.2), inset 0px 0px 2px 2px rgba(0,0,0,0.2);
@@ -572,7 +577,7 @@ text-decoration:none;
 } 
 
 /*
- * device-specific styles
+ * screen-specific styles
 
 @media screen and (max-width: 1024px) {
 
@@ -629,4 +634,4 @@ h2 {font-size: 36px; letter-spacing: -2px; line-height: 100%; color: rgb(72,72,7
 	dl.mitmachen dd { float: none; width: 100%; }
 }
   */
-  
+/* O */
