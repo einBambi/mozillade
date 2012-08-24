@@ -1,11 +1,11 @@
-			<h2 class="programm9">Auf den Projektseiten fündig geworden?</h2>
-			<div class="intro intro2">
+			<h2 style="margin-top:-12px;">Auf den Projektseiten fündig geworden?</h2>
+			<div class="intro" style="width:700px; margin-top:22px; color:rgb(51,51,51);">
 				<p>Schön, wenn wir ein Problem lösen oder eine Frage beantworten konnten. All diese Angebote sind Ergebnis der Arbeit von freiwilligen Helfern.
 				Sie arbeiten in ihrer Freizeit daran, das deutschsprachige Informationsangebot rund um Mozilla auszubauen und zu verbessern - 
 				ein wertvoller Service für Millionen von Nutzern!</p>
 			</div>
-			<h3 class="lust">Lust, dabei zu sein?</h3>
-			<p class="projekte">Unsere Projekte bieten einige vielfältige Möglichkeiten, wie sich wirklich <span class="underline">jeder</span> aktiv einbringen kann:</p>
+			<h3 style="font-weight:300; font-family:'Open Sans Light',sans-serif; margin-top:132px; font-size:22px;">Lust, dabei zu sein?</h3>
+			<p style="margin-top:-22px; color:rgb(51,51,51); margin-left:260px; width:424px;">Unsere Projekte bieten einige vielfältige Möglichkeiten, wie sich wirklich <span style="text-decoration: underline">jeder</span> aktiv einbringen kann:</p>
 			<div id="mitmachenul">
 			<?php
 
@@ -71,7 +71,7 @@
 			<ul class="mitmachen clearfix" id="<?=strtolower($val['name']); ?>">
 				<li>
 				<h3><a href="<?=$val['url']; ?>"><img src="/img/logos/<?=strtolower($val['name']); ?>.png" alt="<?=$val['name']; ?>-Logo" />
-				<h3 class="programme"><?=$val['name']; ?></h3>
+				<h3 style="font-weight:300; font-family:'Open Sans Light',sans-serif; margin-top:-6px; font-size:22px; color:rgb(175,50,50);"><?=$val['name']; ?></h3>
 				</a></h3>
 					<p id="lah"><?=$val['desc']; ?></p>
 				</li>
@@ -83,7 +83,7 @@
 
 	<section id="pllt">
 	<div id="plnt">
-		<aside id="sidebar" class="programm10">
+		<aside id="sidebar" style="margin-top:-1754px;">
 <?php require_once("planet2.php"); ?>
 		</aside> 
 			</section>

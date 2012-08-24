@@ -1,9 +1,9 @@
-            <h2 class="top16">Community-Kalender</h2>
-            <iframe src="https://www.google.com/calendar/embed?title=Termine%20und%20Veranstaltungen%20der%20deutschsprachigen%20Mozilla-Community&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=mozilla.de%40gmail.com&amp;color=%23182C57&amp;ctz=Europe%2FBerlin" class="iframestyle" width="720" height="600" frameborder="0" scrolling="no"></iframe>        	    
+            <h2 style="top:16px;">Community-Kalender</h2>
+            <iframe src="https://www.google.com/calendar/embed?title=Termine%20und%20Veranstaltungen%20der%20deutschsprachigen%20Mozilla-Community&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=mozilla.de%40gmail.com&amp;color=%23182C57&amp;ctz=Europe%2FBerlin" style=" border-width:0; margin-top:20px;" width="720" height="600" frameborder="0" scrolling="no"></iframe>        	    
 		</section>
 	<section id="pllt">
 	<div id="plnt">
-		<aside id="sidebar" class="programm7">
+		<aside id="sidebar" style="margin-top:76px;">
 <?php require_once("planet2.php"); ?>
 		</aside> 
 			</section>
