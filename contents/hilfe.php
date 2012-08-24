@@ -31,10 +31,10 @@
 			</li>      </td>
       <td valign="middle" class="td2">
 			<li>
-			           <h3><a href="http://www.sunbird-kalender.de/forum/"><img src="/img/logos/lightning.png" width="50px" height="50px" alt="C" />
+			           <h3><a href="http://www.thunderbird-mail.de/forum/viewforum.php?f=46"><img src="/img/logos/lightning.png" width="50px" height="50px" alt="C" />
             <h3 style="font-weight:300; font-family:'Open Sans Light',sans-serif; margin-top:-6px; font-size:22px; color:rgb(175,50,50);">Lightning</h3>
             </a></h3>
-                <a class="button" style="margin-top:40px;" href="http://www.sunbird-kalender.de/forum/">Forum</a>
+                <a class="button" style="margin-top:40px;" href="http://www.thunderbird-mail.de/forum/viewforum.php?f=46">Forum</a>
 			</li>      </td>
     </tr>
     <tr>
@@ -58,7 +58,7 @@
 		</section>
 	<section id="pllt">
 	<div id="plnt">
-		<aside id="sidebar" style="margin-top:94px;">
+		<aside id="sidebar" style="margin-top:34px;">
 <?php require_once("planet.php"); ?>
 		</aside> 
 	</div>

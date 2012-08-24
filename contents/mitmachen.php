@@ -31,11 +31,11 @@
 					'url' => 'http://seamonkey.at'),
 				3 => array(
 					'name' => 'Lightning',
-					'desc' => 'Das <a href="http://www.sunbird-kalender.de">deutsche Übersetzungsprojekt von Lightning</a> freut sich immer über Hilfe!
+					'desc' => 'Das <a href="http://www.sunbird-kalender.de/index.php">deutsche Übersetzungsprojekt von Lightning</a> freut sich immer über Hilfe!
 				Ob Mitarbeit im Forum, Vorschläge zur Übersetzung, Aktualisierung der FAQ oder Vorantreiben der Dokumentations- bemühungen - wir bieten viele Chancen zur Beteiligung.
-				Interesse? Jeder ist eingeladen, <a href="http://www.sunbird-kalender.de/forum/">im Forum</a> mitzuhelfen, Lightning für deutschsprachige Nutzer
+				Interesse? Jeder ist eingeladen, <a href="http://www.thunderbird-mail.de/forum/viewforum.php?f=46">im Forum</a> mitzuhelfen, Lightning für deutschsprachige Nutzer
 				noch besser zu machen!',
-					'url' => 'http://www.sunbird-kalender.de'),
+					'url' => 'http://www.sunbird-kalender.de/index.php'),
 				4 => array(
 					'name' => 'SUMO',
 					'desc' => 'SUMO ist die Abkürzung von SUpport.MOzilla.com. Die Aufgabe des SUMO-Projekts ist es, Firefox-Nutzern bei Problemen

@@ -37,7 +37,7 @@ function textVeraendern(){var string = $('#sachen > .string');if(string.next().l
        <h3><a href="http://seamonkey.at/"><img src="/img/logos/seamonkey.png" width="50px" height="50px" alt="SeaMonkey-Logo" />
             <h3 style="font-weight:300; font-family:'Open Sans Light',sans-serif; margin-top:-6px; font-size:22px; color:rgb(175,50,50);">SeaMonkey</h3>
             </a></h3>
-                <p id="blah">SeaMonkey ist ein Gesamtpaket welches aus Browser, E-Mail, Newsgroups, Webseiten-Editor und Chat besteht.</p>
+                <p id="blah">SeaMonkey ist ein nützliches und vielfäliges Gesamtpaket welches aus Browser, E-Mail, Newsgroups, Webseiten-Editor und Chat besteht.</p>
             <a class="button" href="http://seamonkey.at/download/">Download</a>
       </li>
        <li>
