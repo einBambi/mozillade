@@ -1,4 +1,4 @@
-            <h1>404</h1><img src="tbrun1.png" alt="oops" width="30%" style="margin-left:174px; margin-top:-138px;" /><h2 style="top:0px;">Seite nicht gefunden - Oops!</h2>
+            <h1>404</h1><img src="tbrun1.png" alt="oops" width="30%" class="oops" /><h2 style="top:0">Seite nicht gefunden - Oops!</h2>
 			<p>Ohje, das ist peinlich. Fehlt hier etwa irgendetwas? Dann erstelle bitte einen <a href="https://bugzilla.mozilla.org/enter_bug.cgi?component=de%20%2F%20German&amp;product=Mozilla%20Communities">Bug-Report</a> oder schaue auf <a href="https://github.com/mozjan/mozillade">github</a> vorbei.</p>
 			<br><br><br></section>
 	</div>

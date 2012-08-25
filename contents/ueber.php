@@ -17,7 +17,7 @@
 		</section>
 	<section id="pllt">
 	<div id="plnt">
-		<aside id="sidebar" style="margin-top:44px;">
+		<aside id="sidebar" class="programm8">
 <?php require_once("planet.php"); ?>
 		</aside> 
 			</section>
