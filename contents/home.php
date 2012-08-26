@@ -19,7 +19,7 @@ function textVeraendern(){var string = $('#sachen > .string');if(string.next().l
     	<ul>
         <li>
             <h3><a href="http://www.camp-firefox.de">
-            <img src="img/logos/firefox.png" width="50px" height="50px" alt="Firefox-Logo" />
+            <img src="img/logos/firefox.png" width="50" height="50" alt="Firefox-Logo" />
 			<h3 class="programme">Firefox</h3>
 			</a></h3>
                 <p id="blah">Firefox ist ein anpassbarer und sicherer Browser mit vielen Erweiterungen, der zur Förderung von Offenheit, Innovation und Chancen im Internet beitragen soll.</p>
@@ -27,28 +27,28 @@ function textVeraendern(){var string = $('#sachen > .string');if(string.next().l
       </li>
       <li>
       <h3><a  href="http://www.thunderbird-mail.de">
-      <img src="img/logos/thunderbird.png" width="50px" height="50px" alt="Thunderbird-Logo" />
+      <img src="img/logos/thunderbird.png" width="50" height="50" alt="Thunderbird-Logo" />
             <h3 class="programme">Thunderbird</h3>
             </a></h3>
                 <p id="blah">Thunderbird, das E-Mail-Pendant zum Browser Firefox, lässt sich mittels zahlreicher Add-ons ganz leicht den eigenen Bedürfnissen anpassen.</p>
             <a class="button" href="http://www.mozilla.com/de/thunderbird/">Download</a>
       </li>
        <li>
-       <h3><a href="http://seamonkey.at/"><img src="img/logos/seamonkey.png" width="50px" height="50px" alt="SeaMonkey-Logo" />
+       <h3><a href="http://seamonkey.at/"><img src="img/logos/seamonkey.png" width="50" height="50" alt="SeaMonkey-Logo" />
             <h3 class="programme">SeaMonkey</h3>
             </a></h3>
                 <p id="blah">SeaMonkey ist ein nützliches und vielfäliges Gesamtpaket welches aus Browser, E-Mail, Newsgroups, Webseiten-Editor und Chat besteht.</p>
             <a class="button" href="http://seamonkey.at/download/">Download</a>
       </li>
        <li>
-            <h3> <a href="http://www.sunbird-kalender.de"><img src="img/logos/lightning.png" width="50px" height="50px" alt="Lightning-Logo" />
+            <h3> <a href="http://www.sunbird-kalender.de"><img src="img/logos/lightning.png" width="50" height="50" alt="Lightning-Logo" />
             <h3 class="programme">Lightning</h3>
             </a></h3>
                 <p id="blah">Lightning, entwickelt vom Mozilla Kalenderprojekt, erweitert Thunderbird und SeaMonkey um eine umfangreiche Termin- und Aufgabenverwaltung.</p>
               <a class="button" href="http://www.sunbird-kalender.de/downloads.php">Download</a>
         </li>
         <li>
-           <h3><a href="http://kompozer-web.de/"><img src="img/logos/kompozer.png" width="50px" height="50px" alt="Kompozer-Logo" />
+           <h3><a href="http://kompozer-web.de/"><img src="img/logos/kompozer.png" width="50" height="50" alt="Kompozer-Logo" />
             <h3 class="programme">KompoZer</h3>
             </a></h3>
                 <p id="blah">KompoZer, der intuitive Webeditor mit grafischer Benutzeroberfläche und Echtzeitvorschau zum Erstellen von Internetseiten.</p>
