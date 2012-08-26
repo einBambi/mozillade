@@ -1,3 +1,4 @@
+<<<<<<< HEAD
             <h1>404</h1><img src="tbrun1.png" alt="oops" width="30%" class="oops" /><h2 style="top:0">Seite nicht gefunden - Oops!</h2>
 			<p>Ohje, das ist peinlich. Fehlt hier etwa irgendetwas? Dann erstelle bitte einen <a href="https://bugzilla.mozilla.org/enter_bug.cgi?component=de%20%2F%20German&amp;product=Mozilla%20Communities">Bug-Report</a> oder schaue auf <a href="https://github.com/mozjan/mozillade">github</a> vorbei.</p>
 			<br><br><br></section>
@@ -15,3 +16,8 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/
 jquery/1.4.4/jquery.min.js"></script>
 	</footer>
+=======
+<h1>404</h1><img src="tbrun1.png" alt="oops" class="oops" style="width: 30%;"/><h2 style="top:0">Seite nicht gefunden - Oops!</h2>
+<p>Ohje, das ist peinlich. Fehlt hier etwa irgendetwas? Dann erstelle bitte einen <a href="https://bugzilla.mozilla.org/enter_bug.cgi?component=de%20%2F%20German&amp;product=Mozilla%20Communities">Bug-Report</a> oder schaue auf <a href="https://github.com/mozjan/mozillade">github</a> vorbei.</p>
+<br><br><br>
+>>>>>>> c46c56d26e94292fcf5609cadc86a88eea29caf8
