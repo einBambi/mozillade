@@ -70,11 +70,7 @@
 
 			<ul class="mitmachen clearfix" id="<?=strtolower($val['name']); ?>">
 				<li>
-<<<<<<< HEAD
 				<h3><a href="<?=$val['url']; ?>"><img src="/img/logos/<?=strtolower($val['name']); ?>.png" alt="<?=$val['name']; ?>-Logo" />
-=======
-				<h3><a href="<?=$val['url']; ?>"><img src="img/logos/<?=strtolower($val['name']); ?>.png" alt="<?=$val['name']; ?>-Logo" />
->>>>>>> c46c56d26e94292fcf5609cadc86a88eea29caf8
 				<h3 class="programme"><?=$val['name']; ?></h3>
 				</a></h3>
 					<p id="lah"><?=$val['desc']; ?></p>
@@ -83,7 +79,6 @@
 			<?php
 			}
 			?>
-<<<<<<< HEAD
 </div>
 
 	<section id="pllt">
@@ -106,7 +101,3 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/
 jquery/1.4.4/jquery.min.js"></script>
 	</footer>
-=======
-			</div>
-<br><br><br>
->>>>>>> c46c56d26e94292fcf5609cadc86a88eea29caf8
