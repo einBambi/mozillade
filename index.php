@@ -7,10 +7,12 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Die deutschsprachige Mozilla-Community &bull; <?=($site !='') ? ucwords($site) : 'mozilla.de' ?></title>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css?ver=1.1" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css?ver=1.1" />
     <link href="tabzilla.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="alternate" href="http://planet.mozilla.de/atom.xml" title="Mozilla.de Planet-Feed abonnieren" type="application/atom+xml">
+    <script type="text/javascript" src="tabzilla.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <!--[if lte IE 8]>
         <script src="/js/html5.js" type="text/javascript"></script>
     <![endif]-->
@@ -20,14 +22,16 @@
 <!-- <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a> -->
 <a href="/" id="tabzilla">mozilla</a>
 <div id="wrapper">
-        <nav id="headerbar" class="clearfix">
-            <ul>
-                <li><a href="http://www.mozilla.com/de/firefox/">Firefox</a></li>
-                <li><a href="http://www.mozilla.org">mozilla.org</a></li>
-            </ul>
-        </nav><center>
-        			<h1>Wir sind <img src="mozillade.png" width="492" height="85"/></h1>
-                    <h2>Die deutschsprachige Mozilla-Community</h2></center>
+    <nav id="headerbar" class="clearfix">
+        <ul>
+            <li><a href="http://www.mozilla.com/de/firefox/">Firefox</a></li>
+            <li><a href="http://www.mozilla.org">mozilla.org</a></li>
+        </ul>
+    </nav>
+		<div style="text-align: center;">
+        	<h1>Wir sind <img src="mozillade.png" width="492" height="85" alt="logo"/></h1>
+            <h2>Die deutschsprachige Mozilla-Community</h2>
+		</div>
     <header>
     	    <nav id="navigation">
                 <ul>
@@ -73,11 +77,11 @@
             </nav>
     </header>
     
-    <div id="content-wrapper" class="clearfix"> 
-    
-        <section id="content">
-<?php require_once("inc/contents.php"); ?>        	    
-
+<div id="content-wrapper" class="clearfix"> 
+    <?php require_once("inc/contents.php"); ?>
+    <?php require_once("inc/planet_section.php"); ?>
+</div>
+<?php require_once("inc/footer.php"); ?>
 </div>
 </div>
 </body>
