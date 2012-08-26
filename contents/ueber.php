@@ -4,16 +4,17 @@
 			<h2>Kontakt</h2>
 			<ul id="kontakt">
 				<li><a href="irc://moznet/mozilla.de">#mozilla.de</a>, <a href="irc://moznet/firefox.de">#firefox.de</a>
-				<p id="moeg">Per Chat<p></li>
+				<p class="moeg">Per Chat<p></li>
 				<li><a href="https://lists.mozilla.org/listinfo/dev-l10n-de">mozilla.dev.l10n.de</a>
-				<p id="moeg">Per Mailing-Liste<p></li>
+				<p class="moeg">Per Mailing-Liste<p></li>
 				<li><a href="https://wiki.mozilla.org/Contributors/Germany_Austria_Switzerland">Mitwirkende in Deutschland, Österreich und der Schweiz</a>
-				<p id="moeg">In der Nähe?<p></li>
+				<p class="moeg">In der Nähe?<p></li>
 			</ul> 
 			<p id="photo">
-				<img src="/img/community.png" alt="Gruppenfoto Köln 2010" id="team"><br />
+				<img src="img/community.png" alt="Gruppenfoto Köln 2010" id="team"><br />
 				Treffen der Mozilla-Community in Köln, 2010.
 			</p>
+<<<<<<< HEAD
 		</section>
 	<section id="pllt">
 	<div id="plnt">
@@ -35,3 +36,6 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/
 jquery/1.4.4/jquery.min.js"></script>
 	</footer>
+=======
+<br><br><br>
+>>>>>>> c46c56d26e94292fcf5609cadc86a88eea29caf8
