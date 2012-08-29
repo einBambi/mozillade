@@ -62,7 +62,7 @@ function textVeraendern(){var string = $('#sachen > .string');if(string.next().l
 				<h3 class="programme"><?=$val['title']; ?></h3>
 			  </a>
 			</h3>
-	        <p id="class"><?=$val['text']; ?></p>
+	        <p class="programm_text"><?=$val['text']; ?></p>
 	        <a class="button" href="<?=$val['dllink']; ?>">Download</a>
 	      </li>
 		  <?php } ?>
