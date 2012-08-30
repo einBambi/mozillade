@@ -19,7 +19,7 @@ foreach ($planet->entry as $entry) {
 			}
 		}
 
-		echo "\t".'<dd>von <a class="author" href="'.$source.'"></a>'.$entry->author->name.'</li>'."\n";
+		echo "\t".'<div>von <a class="author" href="'.$source.'">'.$entry->author->name.'</a></div></li>'."\n";
 
 		$i++;
 

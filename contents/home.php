@@ -59,7 +59,7 @@ function textVeraendern(){var string = $('#sachen > .string');if(string.next().l
 	        <h3>
 		      <a href="<?=$val['link']; ?>">
 	            <img src="img/logos/<?=$val['img']; ?>.png" width="50" height="50" alt="<?=$val['title']; ?>-Logo" />
-				<h3 class="programme"><?=$val['title']; ?></h3>
+				<span class="programme"><?=$val['title']; ?></span>
 			  </a>
 			</h3>
 	        <p class="programm_text"><?=$val['text']; ?></p>
