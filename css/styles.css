@@ -82,13 +82,13 @@ div#mitmachenul a{color:#af3232;text-decoration:none}
 div#mitmachenul h2{float:left;margin-bottom:24px;margin-left:0;width:152px}
 div#mitmachenul h3 a,div#hilfe h3 a{clear:left;color:#af3232;float:left;font-family:"Open Sans Light",sans-serif;font-size:24px;font-weight:300;height:92px;margin-left:0;padding-top:18px;text-decoration:none;width:252px}
 div#mitmachenul li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 24px;padding-top:24px;width:700px;zoom:1px}
-dl#planet{padding:0 0 0 5px}
-dl#planet a.post{color:#af3232;font-family:"Open Sans Light",sans-serif;font-weight:300;text-decoration:none}
-dl#planet dd{color:#888;font-style:italic;margin:0 50px 0 0}
-dl#planet dd a.author{color:#888}
-dl#planet img{border:1px solid #d6d6d6;border-radius:.25em;margin-left:-60px;margin-top:4px;position:absolute}
-dl#planet li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 8px;padding-top:8px;zoom:1px}
-dl#planet ul,.projects-block ul,div#mitmachenul ul,div#hilfe ul{clear:left;color:#333;zoom:1px}
+ul#planet{padding:0 0 0 5px}
+ul#planet a.post{color:#af3232;font-family:"Open Sans Light",sans-serif;font-weight:300;text-decoration:none}
+ul#planet div{color:#888;font-style:italic;margin:0 50px 0 0}
+ul#planet div a.author{color:#888}
+ul#planet img{border:1px solid #d6d6d6;border-radius:.25em;margin-left:-60px;margin-top:4px;position:absolute}
+ul#planet li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 8px;padding-top:8px;zoom:1px}
+ul#planet ul,.projects-block ul,div#mitmachenul ul,div#hilfe ul{clear:left;color:#333;zoom:1px}
 dl.planetlink,p.planetlink,p.planetlink a,ul#kontakt a{color:#af3232;font-family:"Open Sans Light",sans-serif;font-weight:300;text-align:right;text-decoration:none}
 footer{background:#fff;color:#666;font-size:.875em;line-height:1.285;margin:1em 0 0;padding:34px 0;width:100%}
 footer a{color:color:rgb(175,50,50)}
