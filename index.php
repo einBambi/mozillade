@@ -39,7 +39,7 @@
 
 	$links = array( 
 		0 => array( 
-			'href' => '/', 
+			'href' => '?site=home', 
 			'title' => 'Zur Startseite wechseln',
 			'text' => 'Start'),	
 		1 => array( 

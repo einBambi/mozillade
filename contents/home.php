@@ -1,6 +1,41 @@
-<img id="com" src="com22.jpg"/>
-			<p id="pic"><div id="sachen"><div class="aktivitaet">Im Internet surfen...</div> <div class="aktivitaet">E-Mails schreiben...</div> <div class="aktivitaet">Termine verwalten...</div> <div class="aktivitaet">Webseiten erstellen...</div></div></p>
-			<p id="pic">Täglich verwenden Millionen<br>Nutzer Anwendungen der<br>weltweiten Mozilla-Community – auch im deutschsprachigen Raum.</p>
+<?php
+
+$projekte = array( 
+	0 => array( 
+		'link' => 'http://www.camp-firefox.de',
+		'dllink' => 'http://www.mozilla.com/de/firefox/',
+		'title' => 'Firefox',
+		'img' => 'firefox',
+		'text' => 'Firefox ist ein anpassbarer und sicherer Browser mit vielen Erweiterungen, der zur Förderung von Offenheit, Innovation und Chancen im Internet beitragen soll.'),
+	1 => array( 
+		'link' => 'http://www.thunderbird-mail.de',
+		'dllink' => 'http://www.mozilla.com/de/thunderbird/',
+		'title' => 'Thunderbird',
+		'img' => 'thunderbird',
+		'text' => 'Thunderbird, das E-Mail-Pendant zum Browser Firefox, lässt sich mittels zahlreicher Add-ons ganz leicht den eigenen Bedürfnissen anpassen.'),
+	2 => array( 
+		'link' => 'http://seamonkey.at/',
+		'dllink' => 'http://seamonkey.at/download/',
+		'title' => 'SeaMonkey',
+		'img' => 'seamonkey',
+		'text' => 'SeaMonkey ist ein nützliches und vielfäliges Gesamtpaket welches aus Browser, E-Mail, Newsgroups, Webseiten-Editor und Chat besteht.'),
+	3 => array( 
+		'link' => 'http://www.sunbird-kalender.de',
+		'dllink' => 'http://www.sunbird-kalender.de/download/',
+		'title' => 'Lightning',
+		'img' => 'lightning',
+		'text' => 'Lightning, entwickelt vom Mozilla Kalenderprojekt, erweitert Thunderbird und SeaMonkey um eine umfangreiche Termin- und Aufgabenverwaltung.'),		
+	4 => array( 
+		'link' => 'http://kompozer-web.de/',
+		'dllink' => 'http://kompozer-web.de/',
+		'title' => 'KompoZer',
+		'img' => 'kompozer',
+		'text' => 'KompoZer, der intuitive Webeditor mit grafischer Benutzeroberfläche und Echtzeitvorschau zum Erstellen von Internetseiten.')
+);
+
+?><img id="com" src="com22.jpg" alt="Gruppenfoto"/>
+			<p class="pic"><div id="sachen"><div class="aktivitaet">Im Internet surfen...</div> <div class="aktivitaet">E-Mails schreiben...</div> <div class="aktivitaet">Termine verwalten...</div> <div class="aktivitaet">Webseiten erstellen...</div></div></p>
+			<p class="pic">Täglich verwenden Millionen<br>Nutzer Anwendungen der<br>weltweiten Mozilla-Community – auch im deutschsprachigen Raum.</p>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script type="text/javascript">
@@ -17,43 +52,20 @@ function textVeraendern(){var string = $('#sachen > .string');if(string.next().l
         	<h2>Programme</h2>	
   <p class="intro">Auf den Seiten der Übersetzungsprojekte finden sich alle Informationen. Dort besteht auch die Möglichkeit, sich in Foren auszutauschen.</p>
     	<ul>
-        <li>
-            <h3><a href="http://www.camp-firefox.de">
-            <img src="img/logos/firefox.png" width="50" height="50" alt="Firefox-Logo" />
-			<h3 class="programme">Firefox</h3>
-			</a></h3>
-                <p id="blah">Firefox ist ein anpassbarer und sicherer Browser mit vielen Erweiterungen, der zur Förderung von Offenheit, Innovation und Chancen im Internet beitragen soll.</p>
-      <a class="button" href="http://www.mozilla.com/de/firefox/">Download</a>
-      </li>
-      <li>
-      <h3><a  href="http://www.thunderbird-mail.de">
-      <img src="img/logos/thunderbird.png" width="50" height="50" alt="Thunderbird-Logo" />
-            <h3 class="programme">Thunderbird</h3>
-            </a></h3>
-                <p id="blah">Thunderbird, das E-Mail-Pendant zum Browser Firefox, lässt sich mittels zahlreicher Add-ons ganz leicht den eigenen Bedürfnissen anpassen.</p>
-            <a class="button" href="http://www.mozilla.com/de/thunderbird/">Download</a>
-      </li>
-       <li>
-       <h3><a href="http://seamonkey.at/"><img src="img/logos/seamonkey.png" width="50" height="50" alt="SeaMonkey-Logo" />
-            <h3 class="programme">SeaMonkey</h3>
-            </a></h3>
-                <p id="blah">SeaMonkey ist ein nützliches und vielfäliges Gesamtpaket welches aus Browser, E-Mail, Newsgroups, Webseiten-Editor und Chat besteht.</p>
-            <a class="button" href="http://seamonkey.at/download/">Download</a>
-      </li>
-       <li>
-            <h3> <a href="http://www.sunbird-kalender.de"><img src="img/logos/lightning.png" width="50" height="50" alt="Lightning-Logo" />
-            <h3 class="programme">Lightning</h3>
-            </a></h3>
-                <p id="blah">Lightning, entwickelt vom Mozilla Kalenderprojekt, erweitert Thunderbird und SeaMonkey um eine umfangreiche Termin- und Aufgabenverwaltung.</p>
-              <a class="button" href="http://www.sunbird-kalender.de/downloads.php">Download</a>
-        </li>
-        <li>
-           <h3><a href="http://kompozer-web.de/"><img src="img/logos/kompozer.png" width="50" height="50" alt="Kompozer-Logo" />
-            <h3 class="programme">KompoZer</h3>
-            </a></h3>
-                <p id="blah">KompoZer, der intuitive Webeditor mit grafischer Benutzeroberfläche und Echtzeitvorschau zum Erstellen von Internetseiten.</p>
-           <a class="button" href="http://kompozer-web.de/">Download</a>
-     </li>
+		  <?php
+		  foreach($projekte as $val) {
+		  ?>
+		  <li>
+	        <h3>
+		      <a href="<?=$val['link']; ?>">
+	            <img src="img/logos/<?=$val['img']; ?>.png" width="50" height="50" alt="<?=$val['title']; ?>-Logo" />
+				<h3 class="programme"><?=$val['title']; ?></h3>
+			  </a>
+			</h3>
+	        <p class="programm_text"><?=$val['text']; ?></p>
+	        <a class="button" href="<?=$val['dllink']; ?>">Download</a>
+	      </li>
+		  <?php } ?>
       </ul>
     </section>
 </div>
