@@ -1,4 +1,4 @@
-            <h2>Impressum - <h4 class="impressum">Verantwortlich für diese Website ist:</h4></h2>
+            <h2>Impressum</h2><h4 class="impressum"> - Verantwortlich für diese Website ist:</h4>
 			
 			<br><p class="impressumc">Abdulkadir Topal<br />
 			Gallenkampstr. 9<br />
