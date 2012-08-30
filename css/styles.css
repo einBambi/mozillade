@@ -13,7 +13,7 @@
 #home span.programme{font-size:21px !important; margin-top: -10px;}
 #home #sidebar{top: 40em;}
 #navigation{font-family:'Open Sans',sans-serif;font-size:18px;font-weight:300;line-height:72px;margin-bottom:48px;padding-bottom:0;padding-top:0;text-align:center;text-decoration:none}
-#navigation a:hover,dl#planet dd a.author:hover,p.planetlink a:hover,.projects-block a:hover,div#mitmachenul a:hover,ul#kontakt a:hover,div#hilfe a:hover{text-decoration:underline}
+#navigation a:hover,dl#planet dd a.author:hover,p.planetlink a:hover,.projects-block a:hover,div#mitmachenul a:hover,ul#kontakt a:hover,div.hilfe a:hover{text-decoration:underline}
 #navigation ul li{display:inline;margin:0;padding-bottom:12px;padding-top:12px;zoom:1px}
 #navigation ul li .aktiv{color:#343434;padding:8px 24px;text-decoration:none}
 #navigation ul li a{border-left:1px dotted #d6d6d6;display:inline;padding:8px 24px;text-decoration:none;zoom:1px}
@@ -57,14 +57,14 @@
 .programm11{margin-top:328px}
 .programme{font-weight:300; font-family:'Open Sans Light',sans-serif; margin-top:-6px; font-size:22px; color:rgb(175,50,50)}
 .projects-block{float:left;margin-bottom:24px;margin-left:0;width:620px}
-.projects-block a.button:hover,div#mitmachenul a.button:hover,div#hilfe a.button:hover{cursor:default;text-decoration:none}
+.projects-block a.button:hover,div#mitmachenul a.button:hover,div.hilfe a.button:hover{cursor:default;text-decoration:none}
 .projects-block h2{float:left;margin-bottom:24px;margin-left:0;width:252px}
 .projects-block h3 a{clear:left;color:#af3232;float:left;font-family:"Open Sans Light",sans-serif;font-size:24px;font-weight:300;margin-left:0;padding-top:18px;text-decoration:none;width:252px}
-.projects-block h3 img,div#mitmachenul h3 img,div#hilfe h3 img{-moz-border-radius:.25em;-moz-box-shadow:0 2px 4px rgba(0,0,0,0.1);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.1);background:#fff;border:1px solid #d6d6d6;border-radius:.25em;box-shadow:0 2px 4px rgba(0,0,0,0.1);float:left;height:50px;margin:-18px 24px 24px 0;padding:8px;width:50px}
-.projects-block h3 span,div#mitmachenul h3 span,div#hilfe h3 span{display:block;font-size:18px;letter-spacing:normal}
+.projects-block h3 img,div#mitmachenul h3 img,div.hilfe h3 img{-moz-border-radius:.25em;-moz-box-shadow:0 2px 4px rgba(0,0,0,0.1);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.1);background:#fff;border:1px solid #d6d6d6;border-radius:.25em;box-shadow:0 2px 4px rgba(0,0,0,0.1);float:left;height:50px;margin:-18px 24px 24px 0;padding:8px;width:50px}
+.projects-block h3 span,div#mitmachenul h3 span,div.hilfe h3 span{display:block;font-size:18px;letter-spacing:normal}
 .projects-block li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 24px;padding-top:24px;zoom:1px}
-.projects-block li.more,div#mitmachenul li.more,div#hilfe li.more{border:0;padding-top:0}
-.projects-block p,div#mitmachenul p,div#hilfe p{margin-top:6px}
+.projects-block li.more,div#mitmachenul li.more,div.hilfe li.more{border:0;padding-top:0}
+.projects-block p,div#mitmachenul p,div.hilfe p{margin-top:6px}
 .projects-block p.more{margin-left:0;width:auto}
 .projekte{margin-top:-22px; color:rgb(51,51,51); margin-left:260px; width:424px}
 .small,small{font-size:12px;line-height:100%}
@@ -76,11 +76,11 @@
 @font-face{font-family:OpenSans-Reg;src:url(OpenSans-Regular.ttf) format(truetype)}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{border-top:2px solid #fff;min-width:1024px}
-div#hilfe a{text-decoration:none}
-div#hilfe li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 92px;padding-top:24px;width:200px;zoom:1px}
+div.hilfe a{text-decoration:none}
+div.hilfe li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 92px;padding-top:24px;width:200px;zoom:1px}
 div#mitmachenul a{color:#af3232;text-decoration:none}
 div#mitmachenul h2{float:left;margin-bottom:24px;margin-left:0;width:152px}
-div#mitmachenul h3 a,div#hilfe h3 a{clear:left;color:#af3232;float:left;font-family:"Open Sans Light",sans-serif;font-size:24px;font-weight:300;height:92px;margin-left:0;padding-top:18px;text-decoration:none;width:252px}
+div#mitmachenul h3 a,div.hilfe h3 a{clear:left;color:#af3232;float:left;font-family:"Open Sans Light",sans-serif;font-size:24px;font-weight:300;height:92px;margin-left:0;padding-top:18px;text-decoration:none;width:252px}
 div#mitmachenul li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 24px;padding-top:24px;width:700px;zoom:1px}
 ul#planet{padding:0 0 0 5px}
 ul#planet a.post{color:#af3232;font-family:"Open Sans Light",sans-serif;font-weight:300;text-decoration:none}
@@ -88,7 +88,7 @@ ul#planet div{color:#888;font-style:italic;margin:0 50px 0 0}
 ul#planet div a.author{color:#888}
 ul#planet img{border:1px solid #d6d6d6;border-radius:.25em;margin-left:-60px;margin-top:4px;position:absolute}
 ul#planet li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 8px;padding-top:8px;zoom:1px}
-ul#planet ul,.projects-block ul,div#mitmachenul ul,div#hilfe ul{clear:left;color:#333;zoom:1px}
+ul#planet ul,.projects-block ul,div#mitmachenul ul,div.hilfe ul{clear:left;color:#333;zoom:1px}
 dl.planetlink,p.planetlink,p.planetlink a,ul#kontakt a{color:#af3232;font-family:"Open Sans Light",sans-serif;font-weight:300;text-align:right;text-decoration:none}
 footer{background:#fff;color:#666;font-size:.875em;line-height:1.285;margin:1em 0 0;padding:34px 0;width:100%}
 footer a{color:color:rgb(175,50,50)}
