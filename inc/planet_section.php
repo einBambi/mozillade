@@ -1,6 +1,7 @@
 <?php
 // Sites that can have a planet entries with avatar:
 $planetWithAvatar = array("home", "hilfe", "impressum", "ueber");
+$noPlanet = array("404");
 
 if(isset($_GET['site'])) {
     $site = $_GET['site'];
@@ -12,7 +13,7 @@ if(isset($_GET['site'])) {
 			<?php
 				if(in_array($site, $planetWithAvatar))
 					require_once("planet.php");
-				else
+				else if(!in_array($site, $noPlanet))
 					require_once("planet2.php");
 			?>
 		</aside> 
