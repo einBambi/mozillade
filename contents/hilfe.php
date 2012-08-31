@@ -36,7 +36,6 @@
 <p id="uebertext">Wenn sich Firefox, Thunderbird &amp; Co. nicht richtig benehmen und deshalb langsam sind, abstürzen oder andere Probleme bereiten, helfen wir Dir gerne weiter. Das einzige, was du machen musst, ist uns zu kontaktieren - entweder über Foren oder über Chat.</p>
 <h2>Hier findest Du uns:</h2><br><br>
 <div class="hilfe">
-  <ul>
     <table class="t1"><tbody>
 		<?php
 		$count = 0;
@@ -50,17 +49,18 @@
 		?>
 		<?php if($newline == true) echo "<tr>"; ?>
 		<td style="vertical-align: middle;" class="td<?=$tdclasscount ?>">
+		<ul>
 		  <li>
 			<h3>
 		      <a href="<?=$val['url']; ?>"><img src="img/logos/<?=$val['logo'];?>.png" class="picex" alt="C" />
-		      <h3 class="programme programm2"><?=$val['name']; ?></h3>
+		      <span class="programme programm2"><?=$val['name']; ?></span>
 			  </a>
 			</h3>
 			<a class="button programm3" href="<?=$val['url']; ?>"><?=$val['btnlabel']; ?></a>
 		  </li>
+		</ul>
 		</td>
 		<?php if($newline == 0) echo "</tr>"; ?>
 		<?php } ?>
     </tbody></table>
-  </ul>
 </div><br>
