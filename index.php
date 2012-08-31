@@ -64,6 +64,10 @@
 			'text' => '404 (Test)')
 	);
 
+	if(!$site) {
+		$site = 'home';
+	}
+
 	foreach ($links as $val) {
 		if ($val['href'] != $site) {
 			echo  "\t<li><a href=\"?site=".$val['href']."\" title=\"".$val['title']."\">".$val['text']."</a></li>\n";
