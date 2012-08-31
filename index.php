@@ -39,34 +39,34 @@
 
 	$links = array( 
 		0 => array( 
-			'href' => '?site=home', 
+			'href' => 'home', 
 			'title' => 'Zur Startseite wechseln',
 			'text' => 'Start'),	
 		1 => array( 
-			'href' => '?site=hilfe', 
+			'href' => 'hilfe', 
 			'title' => 'Haben Sie Probleme mit Firefox & Co.? Wir helfen Ihnen weiter!',
 			'text' => 'Hilfe'),
 		2 => array( 
-			'href' => '?site=mitmachen', 
+			'href' => 'mitmachen', 
 			'title' => 'Möglichkeiten, bei Mozilla mitzumachen',
 			'text' => 'Mitmachen!'),	
 		3 => array( 
-			'href' => '?site=kalender', 
+			'href' => 'kalender', 
 			'title' => 'Community-Kalender',
 			'text' => 'Events'),		
 		4 => array( 
-			'href' => '?site=ueber', 
+			'href' => 'ueber', 
 			'title' => 'Mehr über Mozilla im deutschsprachigen Raum erfahren',
 			'text' => 'Über Uns'),
 		5 => array( 
-			'href' => '?site=404', 
+			'href' => '404', 
 			'title' => 'Fehlerseite',
 			'text' => '404 (Test)')
 	);
 
 	foreach ($links as $val) {
-		if ($val['href'] != $_SERVER['REQUEST_URI']) {
-			echo  "\t<li><a href=\"".$val['href']."\" title=\"".$val['title']."\">".$val['text']."</a></li>\n";
+		if ($val['href'] != $site) {
+			echo  "\t<li><a href=\"?site=".$val['href']."\" title=\"".$val['title']."\">".$val['text']."</a></li>\n";
 		} else {
 			echo  "\t<li><span class=\"aktiv\">".$val['text']."</span></li>\n";
 		}
