@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="alternate" href="http://planet.mozilla.de/atom.xml" title="Mozilla.de Planet-Feed abonnieren" type="application/atom+xml">
     <script type="text/javascript" src="tabzilla.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <!--[if lte IE 8]>
         <script src="/js/html5.js" type="text/javascript"></script>
     <![endif]-->
