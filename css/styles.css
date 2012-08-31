@@ -10,6 +10,7 @@
 #headerbar ul{float:right;list-style:none;margin-right:25px;text-decoration:none}
 #headerbar ul li{float:left;padding:.1em .5em .1em .7em;text-decoration:none}
 #headerbar ul li a{color:#484848;font-size:13px;margin-right:16px;margin-top:18px;text-decoration:none;text-transform:uppercase}
+#hilfe #content{min-height:50em;}
 #home span.programme {margin-top: -10px;}
 #home span.programme, #mitmachen span.programme {font-size:21px !important;}
 #home #sidebar{top: 40em;}
