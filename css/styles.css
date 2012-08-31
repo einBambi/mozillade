@@ -17,7 +17,7 @@
 #navigation a:hover,dl#planet dd a.author:hover,p.planetlink a:hover,.projects-block a:hover,div#mitmachenul a:hover,ul#kontakt a:hover,div.hilfe a:hover{text-decoration:underline}
 #navigation ul li{display:inline;margin:0;padding-bottom:12px;padding-top:12px;zoom:1px}
 #navigation ul li .aktiv{color:#343434;padding:8px 24px;text-decoration:none}
-#navigation ul li:not(:first-child) a{border-left:1px dotted #d6d6d6;}
+#navigation ul li:not(:first-child) a,#navigation ul li:not(:first-child) span.aktiv{border-left:1px dotted #d6d6d6;}
 #navigation ul li a{display:inline;padding:8px 24px;text-decoration:none;zoom:1px}
 #photo{margin:40px 0 20px;text-align:center}
 #pllt {float:right;width:25%}
