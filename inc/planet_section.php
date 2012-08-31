@@ -11,7 +11,7 @@ if(isset($_GET['site'])) {
 	<div id="plnt">
 		<aside id="sidebar" class="programm5">
 			<?php
-				if(in_array($site, $planetWithAvatar))
+				if(in_array($site, $planetWithAvatar) || !$site)
 					require_once("planet.php");
 				else if(!in_array($site, $noPlanet))
 					require_once("planet2.php");
