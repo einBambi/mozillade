@@ -1,7 +1,7 @@
 <?php
 // Sites that can have a planet entries with avatar:
-$planetWithAvatar = array("home", "hilfe", "impressum", "ueber");
-$noPlanet = array("404");
+$planetWithAvatar = array("hilfe", "ueber");
+$noPlanet = array("404", "impressum");
 
 if(isset($_GET['site'])) {
     $site = $_GET['site'];
