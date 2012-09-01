@@ -86,10 +86,3 @@
 </div>
 </body>
 </html>
-hp"); ?>
-</div>
-<?php require_once("inc/footer.php"); ?>
-</div>
-</div>
-</body>
-</html>
