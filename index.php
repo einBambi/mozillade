@@ -29,7 +29,7 @@
         </ul>
     </nav>
 		<div style="text-align: center;">
-        	<h1>Wir sind <img src="mozillade.png" width="492" height="85" alt="logo"/></h1>
+        	<h1>Wir sind <img src="mozillade.png" width="492" height="85" alt="mozilla.de"/></h1>
             <h2>Die deutschsprachige Mozilla-Community</h2>
 		</div>
     <header>
@@ -57,11 +57,7 @@
 		4 => array( 
 			'href' => 'ueber', 
 			'title' => 'Mehr über Mozilla im deutschsprachigen Raum erfahren',
-			'text' => 'Über Uns'),
-		5 => array( 
-			'href' => '404', 
-			'title' => 'Fehlerseite',
-			'text' => '404 (Test)')
+			'text' => 'Über Uns')
 	);
 
 	if(!$site) {
@@ -84,6 +80,13 @@
 <div id="content-wrapper" class="clearfix"> 
     <?php require_once("inc/contents.php"); ?>
     <?php require_once("inc/planet_section.php"); ?>
+</div>
+<?php require_once("inc/footer.php"); ?>
+</div>
+</div>
+</body>
+</html>
+hp"); ?>
 </div>
 <?php require_once("inc/footer.php"); ?>
 </div>
