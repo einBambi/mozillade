@@ -33,7 +33,7 @@
 	);
 ?>
 <h6 class="ml3">Du brauchst Hilfe?</h6>
-<p id="uebertext">Wenn sich Firefox, Thunderbird &amp; Co. nicht richtig benehmen und deshalb langsam sind, abstürzen oder andere Probleme bereiten, helfen wir Dir gerne weiter. Das einzige, was du machen musst, ist uns zu kontaktieren - entweder über Foren oder über Chat.</p>
+<p id="uebertext">Wenn sich Firefox, Thunderbird &amp; Co. nicht richtig benehmen und deshalb langsam sind, abstürzen oder andere Probleme bereiten, helfen wir Dir gerne weiter. Das einzige, was Du machen musst, ist uns zu kontaktieren - entweder über Foren oder über Chat.</p>
 <h2>Hier findest Du uns:</h2><br><br>
 <div class="hilfe">
     <table class="t1"><tbody>
