@@ -10,8 +10,26 @@ echo "<ul>";
 foreach ($planet->entry as $entry) {
 
 	if ($i < $count) {
+	$profilepic = array( 
+		0 => array( 
+			'name' => 'Sören Hentzschel', 
+			'link' => '/avatar/soeren.png'),	
+		1 => array( 
+			'name' => 'SUMO', 
+			'link' => '/avatar/SUMO.png'),	
+		2 => array( 
+			'name' => 'KaiRo', 
+			'link' => '/avatar/KaiRo.png'),
+		3 => array( 
+			'name' => 'TmoWizard', 
+			'link' => '/avatar/Tmo.png')
+	);
 
-		echo "\t".'<li><img src="http://www.gravatar.com/avatar/'.md5(strtolower(trim($entry->author->name))).'?d=&amp;s=40" alt="post"/><a class="post" href="'.htmlspecialchars($entry->link["href"]).'">'.$entry->title.'</a>'."\n";
+		foreach($profilepic as $val) {
+			if($val['name'] == $entry->author->name)	{	
+			echo "\t".'<li><img src="'.$val['link'].'" alt="post"/><a class="post" href="'.htmlspecialchars($entry->link["href"]).'">'.$entry->title.'</a>'."\n";
+			}
+		}
 		
 		foreach ($entry->source->link as $link) {
 			if ($link["type"] == "text/html" && $link["rel"] == "alternate") {

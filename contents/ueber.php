@@ -1,6 +1,6 @@
 		<h6>Über Uns/mozilla.de</h6>
 			<p id="uebertext">Diese Seite ist von Mitgliedern der deutschsprachigen Mozilla-Community erstellt worden, um allen Mozilla-Nutzern und Freunden
-			 eines offenen Internets das Mitmachen beim Mozilla-Projekt zu erleichtern.</p>
+			 eines offenen Internets das Mitmachen beim Mozilla-Projekt um ein Vielfaches zu erleichtern.</p>
 			<h2>Kontakt</h2>
 			<ul id="kontakt">
 				<li><a href="irc://moznet/mozilla.de">#mozilla.de</a>, <a href="irc://moznet/firefox.de">#firefox.de</a>

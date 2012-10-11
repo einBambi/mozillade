@@ -12,9 +12,9 @@
 			$projects = array( 
 				0 => array( 
 					'name' => 'Firefox', 
-					'desc' => 'Die deutsche Firefox-Community wird zu 100% von Freiwilligen vorangetrieben. Wir übersetzen den Browser, Hilfedokumente und Online-Kampagnen,
+					'desc' => 'Die deutsche Firefox-Community wird zu 100% von Freiwilligen vorangetrieben. Wir übersetzen den Browser, Hilfedokumente, sowie Online-Kampagnen,
 					und bieten persönliche Hilfe im Forum für über 30 Millionen deutschsprachige Anwender. Wir suchen jederzeit nach engagierten Firefox-Anwendern,
-					die mithelfen möchten und freuen uns über jeden Beitrag <a href="http://www.camp-firefox.de/forum/viewforum.php?f=2">Forum</a>.',
+					die mithelfen möchten und freuen uns über jeden Beitrag im <a href="http://www.camp-firefox.de/forum/viewforum.php?f=2">Forum</a>.',
 					'url' => 'http://www.camp-firefox.de'),		
 				1 => array(
 					'name' => 'Thunderbird',
@@ -27,12 +27,12 @@
 					'desc' => 'Das SeaMonkey-Projekt besteht aus freiwilligen Helfern, die sich engagieren, um das Internet-Paket weiter zu entwickeln.
 					Wir suchen immer Verstärkung für diese Gemeinschaft und jeder Handgriff zählt - sei es, verschiedene Versionen zu testen,
 				anderen bei Fragen zu helfen, Fehler zu melden oder einfach
-				<a href="http://seamonkey.at/">SeaMonkey weiter zu empfehlen</a>. Es gibt für jeden eine Möglichkeit zu helfen - auch für Dich!', 
+				<a href="http://seamonkey.at/">SeaMonkey weiter zu empfeh- len</a>. Es gibt für jeden eine Möglichkeit zu helfen - auch für Dich!', 
 					'url' => 'http://seamonkey.at'),
 				3 => array(
 					'name' => 'Lightning',
 					'desc' => 'Das <a href="http://www.sunbird-kalender.de/index.php">deutsche Übersetzungsprojekt von Lightning</a> freut sich immer über Hilfe!
-				Ob Mitarbeit im Forum, Vorschläge zur Übersetzung, Aktualisierung der FAQ oder Vorantreiben der Dokumentationsbemühungen - wir bieten viele Chancen zur Beteiligung.
+				Ob Mitarbeit im Forum, Vorschläge zur Übersetzung, Aktualisierung der FAQ oder Vorantreiben der Dokumentations- bemühungen - wir bieten viele Chancen zur Beteiligung.
 				Interesse? Jeder ist eingeladen, <a href="http://www.thunderbird-mail.de/forum/viewforum.php?f=46">im Forum</a> mitzuhelfen, Lightning für deutschsprachige Nutzer
 				noch besser zu machen!',
 					'url' => 'http://www.sunbird-kalender.de/index.php'),

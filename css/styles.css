@@ -122,3 +122,75 @@ ul.mitmachen{margin:30px 0}
 table.t1 {border-collapse: collapse;}
 td.td1 {height: 15.0px; padding: 0.0px 5.0px 0.0px 5.0px}
 td.td2 {padding: 0.0px 72.0px 0.0px 5.0px}
+
+/*
+@media screen and (max-width: 1059px) {
+#content-wrapper{max-width:0px;margin:0;}
+#footer-wrapper{max-width:0px;margin:0;}
+#header-wrapper{max-width:0px}
+body{min-width:0px}
+p.text{width:140%}
+}
+*/
+@media screen and (max-width: 800px) {
+	header {width:800px;}
+	h1 {
+font-size:82px;
+letter-spacing:-4px;
+line-height:100%;
+color: rgb(72,72,72);
+margin-top: 30px;
+}
+h1 img {
+width:376px;
+height:65px;
+}
+h2 {font-size: 36px; letter-spacing: -2px; line-height: 100%; color: rgb(72,72,72);}
+}
+
+@media screen and (max-width: 600px) {
+	body {min-width:400px; overflow-x:hidden;}
+	#header-wrapper { padding: 1.5em 0; text-align: center; }
+	header .logo { float: none; }
+	#navigation { margin: 0; width: 100%; }
+	#navigation ul li { border:none; float: none; padding: 1% 0; }
+	#navigation ul li a { color:white; background: #222; display: block; width: 100%; padding: 5px 0; }
+	#content h1 { text-align: center; }
+	.product { float: none; margin: 0; width: 94% !important; }
+	dl.mitmachen dt { float: none; text-align: center; width: 100%; }
+	dl.mitmachen dd { float: none; width: 100%; }
+	.projects-block p {font-size:0px;}
+	.projects-block {width:240px;}
+	a.button {visibility:hidden;}
+	.projects-block li {margin:0px 0px 88px;}
+	#sidebar {margin-left:90%; margin-top:740px;}
+	img#com {width:0%;}
+	p#pic {font-size:0px;}
+	p.text {margin-left:20px; width:400px;}
+	a.footer-logo{width:0%; visibility:hidden;}
+	aside#sidebar img {position:fixed;width:0px;visibility:hidden;}
+	#headerbar ul {float:left; position:absolute; margin-left:7%;}
+	#back {min-width:400px;}
+	header {min-width:80%; max-width:80%;}
+	#headerbar ul li{}
+	pllt{float:none;}
+	#home #pllt {position:absolute;margin-top:0px;}
+	div.aktivitaet {width:0px; visibility:hidden; overflow:hidden;}
+	p.pic {width:0px;position:fixed;visibility:hidden;}
+	#projects-column {width:400px;}
+	#tabzilla-panel #tabzilla-nav h2 {letter-spacing:0px;}
+	footer {margin-top:160%;}
+	aside#sidebar img {position:fixed;width:0px;}
+	#navigation ul li:not(:first-child) a,#navigation ul li:not(:first-child) span.aktiv{border:none;}
+}
+@media screen and (max-width: 400px) {
+	#header-wrapper { padding: 1.5em 0; text-align: center; }
+	header .logo { float: none; }
+	#navigation { margin: 0; width: 100%; }
+	#navigation ul li { float: none; padding: 1% 0; }
+	#navigation ul li a { background: #222; display: block; width: 100%; padding: 5px 0; }
+	#content h1 { text-align: center; }
+	.product { float: none; margin: 0; width: 94% !important; }
+	dl.mitmachen dt { float: none; text-align: center; width: 100%; }
+	dl.mitmachen dd { float: none; width: 100%; }
+}
