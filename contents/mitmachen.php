@@ -12,7 +12,7 @@
 			$projects = array( 
 				0 => array( 
 					'name' => 'Firefox', 
-					'desc' => 'Die deutsche Firefox-Community wird zu 100% von Freiwilligen vorangetrieben. Wir übersetzen den Browser, Hilfedokumente, sowie Online-Kampagnen,
+					'desc' => 'Die deutsche Firefox-Community wird zu 100% von Freiwilligen vorangetrieben. Wir übersetzen den Browser, Hilfedokumente sowie Online-Kampagnen
 					und bieten persönliche Hilfe im Forum für über 30 Millionen deutschsprachige Anwender. Wir suchen jederzeit nach engagierten Firefox-Anwendern,
 					die mithelfen möchten und freuen uns über jeden Beitrag im <a href="http://www.camp-firefox.de/forum/viewforum.php?f=2">Forum</a>.',
 					'url' => 'http://www.camp-firefox.de'),		
