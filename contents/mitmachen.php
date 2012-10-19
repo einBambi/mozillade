@@ -38,7 +38,7 @@
 					'url' => 'http://www.sunbird-kalender.de/index.php'),
 				4 => array(
 					'name' => 'SUMO',
-					'desc' => 'SUMO ist die Abkürzung von SUpport.MOzilla.com. Die Aufgabe des SUMO-Projekts ist es, Firefox-Nutzern bei Problemen
+					'desc' => 'SUMO ist die Abkürzung von <a href="https://support.mozilla.org/de/home">SUpport.MOzilla.org</a>. Die Aufgabe des SUMO-Projekts ist es, Firefox-Nutzern bei Problemen
  					und Fragen weiterzuhelfen. Es werden besonders Übersetzer benötigt, die die Wissensdatenbank übersetzen und vorhandene Inhalte aktuell halten möchten.
 				  	Der aktuelle Stand kann in der <a href="http://support.mozilla.com/de/localization">Übersetzungsübersicht</a> eingesehen werden.',
 					'url' => 'http://support.mozilla.com/de/'),

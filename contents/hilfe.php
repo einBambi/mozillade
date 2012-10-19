@@ -1,15 +1,15 @@
 <?php
 	$helpwith = array( 
 		0 => array( 
-			'name' => 'Firefox-Chat', 
-			'btnlabel' => 'Betreten',
-			'url' => 'irc://moznet/firefox.de',
-			'logo' => 'irc'),
-		1 => array( 
 			'name' => 'Firefox', 
 			'btnlabel' => 'Forum',
 			'url' => 'http://www.camp-firefox.de/',
 			'logo' => 'firefox'),
+		1 => array( 
+			'name' => 'Firefox-Chat', 
+			'btnlabel' => 'Betreten',
+			'url' => 'irc://moznet/firefox.de',
+			'logo' => 'irc'),
 		2 => array(
 			'name' => 'Thunderbird',
 			'btnlabel' => 'Forum',
