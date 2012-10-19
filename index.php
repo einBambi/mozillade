@@ -25,6 +25,7 @@
     <nav id="headerbar" class="clearfix">
         <ul>
             <li><a href="http://www.mozilla.com/de/firefox/">Firefox</a></li>
+            <li><a href="http://www.thunderbird-mail.de/">Thunderbird</a></li>
             <li><a href="http://www.mozilla.org">mozilla.org</a></li>
         </ul>
     </nav>
@@ -62,7 +63,7 @@
 			'href' => '?site=ueber', 
 			'id' => 'ueber',
 			'title' => 'Mehr über Mozilla im deutschsprachigen Raum erfahren',
-			'text' => 'Über Uns')
+			'text' => 'Über uns')
 	);
 
 	if(!$site) {
