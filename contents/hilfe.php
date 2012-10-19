@@ -5,27 +5,32 @@
 			'btnlabel' => 'Betreten',
 			'url' => 'irc://moznet/firefox.de',
 			'logo' => 'irc'),
-		1 => array(
+		1 => array( 
+			'name' => 'Firefox', 
+			'btnlabel' => 'Forum',
+			'url' => 'http://www.camp-firefox.de/',
+			'logo' => 'firefox'),
+		2 => array(
 			'name' => 'Thunderbird',
 			'btnlabel' => 'Forum',
 			'url' => 'http://www.thunderbird-mail.de',
 			'logo' => 'thunderbird'),
-		2 => array( 
+		3 => array( 
 			'name' => 'SeaMonkey', 
 			'btnlabel' => 'Forum',
 			'url' => 'http://www.seamonkey.at/',
 			'logo' => 'seamonkey'),
-		3 => array(
+		4 => array(
 			'name' => 'Lightning',
 			'btnlabel' => 'Forum', 
 			'url' => 'http://www.thunderbird-mail.de/forum/viewforum.php?f=46',
 			'logo' => 'lightning'),
-		4 => array(
+		5 => array(
 			'name' => 'KompoZer',
 			'btnlabel' => 'Forum',
 			'url' => 'http://www.kompozer-web.de/',
 			'logo' => 'kompozer'),
-		5 => array(
+		6 => array(
 			'name' => 'Entwickler',
 			'btnlabel' => 'MDN',
 			'url' => 'http://developer.mozilla.org/de/',
@@ -52,9 +57,9 @@
 		<ul>
 		  <li>
 			<h3>
-		      <a href="<?=$val['url']; ?>"><img src="img/logos/<?=$val['logo'];?>.png" class="picex" alt="C" />
+		    <img src="img/logos/<?=$val['logo'];?>.png" class="picex" alt="C" />
 		      <span class="programme programm2"><?=$val['name']; ?></span>
-			  </a>
+			  
 			</h3>
 			<a class="button programm3" href="<?=$val['url']; ?>"><?=$val['btnlabel']; ?></a>
 		  </li>

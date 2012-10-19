@@ -6,7 +6,7 @@ $projekte = array(
 		'dllink' => 'http://www.mozilla.com/de/firefox/',
 		'title' => 'Firefox',
 		'img' => 'firefox',
-		'text' => 'Firefox ist ein anpassbarer und sicherer Browser mit vielen Erweiterungen, der zur Förderung von Offenheit, Innovation und Chancen im Internet beitragen soll.'),
+		'text' => 'Firefox ist ein anpassbarer und sicherer Browser mit vielen Erweiterungen, der zur Förderung von Offenheit und Innovation im Internet beiträgt.'),
 	1 => array( 
 		'link' => 'http://www.thunderbird-mail.de',
 		'dllink' => 'http://www.mozilla.com/de/thunderbird/',
@@ -27,7 +27,7 @@ $projekte = array(
 		'text' => 'Lightning, entwickelt vom Mozilla Kalenderprojekt, erweitert Thunderbird und SeaMonkey um eine umfangreiche Termin- und Aufgabenverwaltung.'),		
 	4 => array( 
 		'link' => 'http://kompozer-web.de/',
-		'dllink' => 'http://kompozer-web.de/',
+		'dllink' => 'http://kompozer.net/download.php',
 		'title' => 'KompoZer',
 		'img' => 'kompozer',
 		'text' => 'KompoZer, der intuitive Webeditor mit grafischer Benutzeroberfläche und Echtzeitvorschau zum Erstellen von Internetseiten.')
@@ -57,9 +57,9 @@ function textVeraendern(){var string = $('#sachen > .string');if(string.next().l
 		  ?>
 		  <li>
 	        <h3>
-		      <a href="<?=$val['link']; ?>">
+		      
 	            <img src="img/logos/<?=$val['img']; ?>.png" width="50" height="50" alt="<?=$val['title']; ?>-Logo" />
-				<span class="programme"><?=$val['title']; ?></span>
+				<a href="<?=$val['link']; ?>"><span class="programme"><?=$val['title']; ?></span>
 			  </a>
 			</h3>
 	        <p class="programm_text"><?=$val['text']; ?></p>

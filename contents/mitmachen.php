@@ -50,8 +50,8 @@
 				6 => array(
 					'name' => 'BabelZilla',
 					'desc' => '<a href="http://www.babelzilla.org/">BabelZilla</a> versteht sich als Schnittstelle zwischen Entwicklern und Übersetzern von Erweiterungen für Anwendungen aus der Mozilla-Familie.
- 				Freiwillige aus aller Welt helfen dabei, möglichst viele Erweiterungen zu übersetzen. Selbstverständlich haben wir auch ein deutschsprachiges
-				Forum und freuen uns über neue Freiwillige zum Übersetzen oder Korrekturlesen von Übersetzungen.',
+ 				Freiwillige aus aller Welt helfen dabei, möglichst viele Erweiterungen zu übersetzen. Selbstverständlich haben wir auch ein <a href="http://www.babelzilla.org/forum/index.php">deutschsprachiges
+				Forum</a> und freuen uns über neue Freiwillige zum Übersetzen oder Korrekturlesen von Übersetzungen.',
 					'url' => 'http://www.babelzilla.org/'),
 				7 => array(
 					'name' => 'KompoZer',
