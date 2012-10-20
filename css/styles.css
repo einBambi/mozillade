@@ -1,4 +1,4 @@
-#back{background:#f5f1e8 url(../bg-sand-1.png) repeat;background:url(../bg-gradient-sand-1.png) repeat-x 0 0,url(../bg-sand-1.png) repeat 0 0,#f5f1e8; min-width:1024px;position:absolute;width:100%;z-index:-1}
+#back{border-top:2px solid #fff;background:#f5f1e8 url(../bg-sand-1.png) repeat;background:url(../bg-gradient-sand-1.png) repeat-x 0 0,url(../bg-sand-1.png) repeat 0 0,#f5f1e8; min-width:1024px;position:absolute;width:100%;z-index:-1}
 #com{float:left;position:relative}
 #content{float:left;padding:1.5em 2% 0 1%;width:70%}
 #content h2{font-family:"Open Sans Light",sans-serif;font-size:32px;font-weight:300;position:relative;top:20px}
@@ -80,7 +80,7 @@ img {border:0;}
 :first-child+html .clearfix{min-height:0}
 @font-face{font-family:OpenSans-Reg;src:url(OpenSans-Regular.ttf) format(truetype)}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-body{border-top:2px solid #fff;min-width:1024px;font-weight:300; font-family:'Open Sans Light',sans-serif; line-height:125%}
+body{min-width:1024px;font-weight:300; font-family:'Open Sans Light',sans-serif; line-height:125%}
 div.hilfe a{text-decoration:none}
 div.hilfe li{list-style-type:none;margin:0 0 92px;padding-top:24px;width:200px;zoom:1px}
 div#mitmachenul a{color:#af3232;text-decoration:none}
