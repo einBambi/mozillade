@@ -91,7 +91,7 @@ div#mitmachenul li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0
 aside#sidebar ul{padding:0 0 0 5px}
 aside#sidebar a.post{color:#af3232;font-family:"Open Sans Light",sans-serif;font-weight:300;text-decoration:none}
 aside#sidebar a.post:hover{text-decoration:underline}
-aside#sidebar div{color:#888;font-style:italic;margin:0 50px 0 0}
+aside#sidebar div{color:#888;font-style:italic;font-size:14px;margin:0 50px 0 0}
 aside#sidebar div a.author{color:#888}
 aside#sidebar img{border:1px solid #d6d6d6;border-radius:.25em;margin-left:-60px;margin-top:4px;position:absolute}
 aside#sidebar li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 8px;padding-top:8px;zoom:1px}

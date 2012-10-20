@@ -11,11 +11,6 @@
     <link href="tabzilla.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="alternate" href="http://planet.mozilla.de/atom.xml" title="Mozilla.de Planet-Feed abonnieren" type="application/atom+xml">
-    <script type="text/javascript" src="tabzilla.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <!--[if lte IE 8]>
-        <script src="/js/html5.js" type="text/javascript"></script>
-    <![endif]-->
 </head>
 <body id="<?=($site == '') ? 'home' : $site ?>">
 <div id="back">
@@ -90,5 +85,28 @@
 <?php require_once("inc/footer.php"); ?>
 </div>
 </div>
+<!-- Skripte -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function()
+ {
+     setupAktivitaeten();
+ });
+ function setupAktivitaeten(){if($('.aktivitaet').length > 1){$('.aktivitaet:first').addClass('string').fadeIn(1000);setInterval('textVeraendern()', 3000);}}
+function textVeraendern(){var string = $('#sachen > .string');if(string.next().length == 0){string.removeClass('string').fadeOut(1000);$('.aktivitaet:first').addClass('string').fadeIn(1000);}else{string.removeClass('string').fadeOut(1000);string.next().addClass('string').fadeIn(1000);}}
+</script>
+    <script type="text/javascript" src="tabzilla.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <!--[if lte IE 8]>
+        <script src="/js/html5.js" type="text/javascript"></script>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+    <!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<!-- Ende -->
 </body>
 </html>
