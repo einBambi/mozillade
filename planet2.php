@@ -1,4 +1,4 @@
-<h2>Neuigkeiten <a href="http://planet.mozilla.de/atom.xml" title="Atom Feed abonnieren"><img src="img/icons/feed.png" alt="Feed" class="feedicon" /></a></h2>
+<h2>Neuigkeiten <a href="http://planet.mozilla.de/atom.xml" title="Atom Feed abonnieren"><img src="/img/icons/feed.png" alt="Feed" class="feedicon" /></a></h2>
 <?php require_once("inc/planet2.html"); ?>
 <p class="planetlink">&raquo; <a href="http://planet.mozilla.de">planet.mozilla.de</a></p>
 <br><h2>Bleib' am Ball</h2>

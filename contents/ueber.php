@@ -11,7 +11,7 @@
 				<p class="moeg">In der Nähe?<p></li>
 			</ul> 
 			<p id="photo">
-				<img src="img/community.png" alt="Gruppenfoto Köln 2010" id="team"><br />
+				<img src="/img/community.png" alt="Gruppenfoto Köln 2010" id="team"><br />
 				Treffen der Mozilla-Community in Köln, 2010.
 			</p>
 <br><br><br>

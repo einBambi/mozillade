@@ -57,7 +57,7 @@
 		<ul>
 		  <li>
 			<h3>
-		    <img src="img/logos/<?=$val['logo'];?>.png" class="picex" alt="C" />
+		    <img src="/img/logos/<?=$val['logo'];?>.png" class="picex" alt="C" />
 		      <span class="programme programm2"><?=$val['name']; ?></span>
 			  
 			</h3>
