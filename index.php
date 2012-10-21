@@ -25,7 +25,7 @@
         </ul>
     </nav>
 		<div style="text-align: center;">
-        	<a href="/" style="text-decoration:none;"><h1>Wir sind <img src="mozillade.png" width="492" height="85" alt="mozilla.de"/></h1></a>
+        	<a href="/" style="text-decoration:none;"><h1>Wir sind <img src="/mozillade.png" width="492" height="85" alt="mozilla.de"/></h1></a>
             <h2>Die deutschsprachige Mozilla-Community</h2>
 		</div>
     <header>
