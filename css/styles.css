@@ -61,7 +61,7 @@ tbody tr td ul li h3 span.programme.programm2 {cursor:default;}
 .programm9{margin-bottom:8px;margin-top:-12px}
 .programm10{margin-top:-1754px}
 .programm11{margin-top:328px}
-p.text a:hover,.impressumc a:hover {text-decoration:underline;}
+p.text a:hover,.impressumc a:hover,p#uebertext a:hover {text-decoration:underline;}
 .programme{font-weight:300; font-family:'Open Sans Light',sans-serif; margin-top:-6px; font-size:22px; color:rgb(175,50,50);float:left}
 .projects-block{float:left;margin-bottom:24px;margin-left:0;width:620px}
 .projects-block a.button:hover,div#mitmachenul a.button:hover,div.hilfe a.button:hover{cursor:pointer;text-decoration:none}
@@ -69,7 +69,7 @@ p.text a:hover,.impressumc a:hover {text-decoration:underline;}
 .projects-block h3 {clear:left;color:#af3232;float:left;font-family:"Open Sans Light",sans-serif;font-size:24px;font-weight:300;margin-left:0;padding-top:18px;text-decoration:none;width:252px}
 .projects-block h3 img,div#mitmachenul h3 img,div.hilfe h3 img{-moz-border-radius:.25em;-moz-box-shadow:0 2px 4px rgba(0,0,0,0.1);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.1);background:#fff;border:1px solid #d6d6d6;border-radius:.25em;box-shadow:0 2px 4px rgba(0,0,0,0.1);float:left;height:50px;margin:-18px 24px 24px 0;padding:8px;width:50px}
 .projects-block h3 span,div#mitmachenul h3 span,div.hilfe h3 span{display:block;font-size:21px;letter-spacing:normal}
-.projects-block h3 span:hover,div#mitmachenul h3 span:hover,div.hilfe h3 span:hover{text-decoration:underline}
+.projects-block h3 span:hover,div#mitmachenul h3 span:hover{text-decoration:underline}
 .projects-block li{border-top:1px dotted #d6d6d6;list-style-type:none;margin:0 0 24px;padding-top:24px;zoom:1px}
 .projects-block li.more,div#mitmachenul li.more,div.hilfe li.more{border:0;padding-top:0}
 .projects-block p,div#mitmachenul p,div.hilfe p{margin-top:6px}
@@ -128,7 +128,8 @@ table.t1 {border-collapse: collapse;}
 td.td1 {height: 15.0px; padding: 0.0px 5.0px 0.0px 5.0px}
 td.td2 {padding: 0.0px 72.0px 0.0px 5.0px}
 p.text a {text-decoration:none;}
-.impressumc a {color:rgb(0,150,221);text-decoration:none;}
+.impressumc a,p#uebertext a {color:rgb(0,150,221);text-decoration:none;}
+
 
 /*
 @media screen and (max-width: 1059px) {
@@ -174,8 +175,9 @@ h2 {font-size: 36px; letter-spacing: -2px; line-height: 100%; color: rgb(72,72,7
 	img#com {width:0%;}
 	p#pic {font-size:0px;}
 	p.text {margin-left:20px; width:400px;}
+	nav#headerbar.clearfix {visibility:hidden;}
 	a.footer-logo{width:0%; visibility:hidden;}
-	aside#sidebar img {position:fixed;width:0px;visibility:hidden;}
+	aside#sidebar img {position:fixed;width:0px;}
 	#headerbar ul {float:left; position:absolute; margin-left:7%;}
 	#back {min-width:400px;}
 	header {min-width:80%; max-width:80%;}

@@ -62,7 +62,7 @@
 					'url' => 'http://kompozer-web.de/'),
 				);
 			
-			shuffle($projects);			
+			//shuffle($projects);			
 
 			foreach ($projects as $val) {	
 			
@@ -70,7 +70,7 @@
 
 			<ul class="mitmachen clearfix" id="<?=strtolower($val['name']); ?>">
 				<li>
-				<h3><a href="<?=$val['url']; ?>"><img src="/img/logos/<?=strtolower($val['name']); ?>.png" alt="<?=$val['name']; ?>-Logo" />
+				<h3><a href="<?=$val['url']; ?>"><img src="img/logos/<?=strtolower($val['name']); ?>.png" alt="<?=$val['name']; ?>-Logo" />
 				<span class="programme"><?=$val['name']; ?></span>
 				</a></h3>
 					<p class="lah"><?=$val['desc']; ?></p>

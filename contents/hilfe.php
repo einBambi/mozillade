@@ -38,7 +38,7 @@
 	);
 ?>
 <h6 class="ml3">Du brauchst Hilfe?</h6>
-<p id="uebertext">Wenn sich Firefox, Thunderbird &amp; Co. nicht richtig benehmen und deshalb langsam sind, abstürzen oder andere Probleme bereiten, helfen wir Dir gerne weiter. Das Einzige, was Du machen musst, ist uns zu kontaktieren - entweder über Foren oder über Chat.</p>
+<p id="uebertext">Wenn sich Firefox, Thunderbird &amp; Co. nicht richtig benehmen und deshalb langsam sind, abstürzen oder andere Probleme bereiten, helfen wir Dir gerne weiter. Das Einzige, was Du machen musst, ist uns zu kontaktieren - entweder über Foren oder über Chat. Abgesehen von <a href="https://support.mozilla.org/de/home">Support.Mozilla.Org</a> gibt es weitere hilfreiche Seiten:</p>
 <h2>Hier findest Du uns:</h2><br><br>
 <div class="hilfe">
     <table class="t1"><tbody>
@@ -57,7 +57,7 @@
 		<ul>
 		  <li>
 			<h3>
-		    <img src="/img/logos/<?=$val['logo'];?>.png" class="picex" alt="C" />
+		    <img src="img/logos/<?=$val['logo'];?>.png" class="picex" alt="C" />
 		      <span class="programme programm2"><?=$val['name']; ?></span>
 			  
 			</h3>
