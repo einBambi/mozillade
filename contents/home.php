@@ -3,7 +3,7 @@
 $projekte = array( 
 	0 => array( 
 		'link' => 'http://www.camp-firefox.de',
-		'dllink' => 'http://www.mozilla.com/de/firefox/',
+		'dllink' => 'http://www.mozilla.org/de/firefox/new/',
 		'title' => 'Firefox',
 		'img' => 'firefox',
 		'text' => 'Firefox ist ein anpassbarer und sicherer Browser mit vielen Erweiterungen, der zur Förderung von Offenheit und Innovation im Internet beiträgt.'),
