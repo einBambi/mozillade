@@ -110,7 +110,7 @@
 
 * html #tabzilla-contents             { zoom: 1; } /* IE6 */
 *:first-child+html #tabzilla-contents { zoom: 1; } /* IE7 */
-
+    
 #tabzilla-contents:after {
     visibility: hidden;
     display: block;
@@ -132,29 +132,6 @@
     line-height: 1.5;
 }
 
-#tabzilla-promo .snippet img {
-    position: absolute;
-    top: 40px;
-    left: 20px;
-}
-
-#tabzilla-promo .snippet {
-    padding: 40px;
-}
-
-#tabzilla-promo .snippet h4,
-#tabzilla-panel #tabzilla-nav,
-#tabzilla-panel #tabzilla-nav h2 {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: #484848;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
-    border: 0;
-}
-
 #tabzilla-panel #tabzilla-nav {
     float: left;
     display: inline;
@@ -162,12 +139,6 @@
     margin: 0 10px;
 }
 
-#tabzilla-promo .snippet h4 {
-    line-height: 1.1;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 0.4em;
-}
 
 #tabzilla-panel #tabzilla-nav h2 {
     font-weight: bold;
@@ -289,8 +260,8 @@
     display: block;
     padding: 40px 35px 40px 95px;
     height: 130px;
-    background-image: url(//www.mozilla.org/tabzilla/media/img/promo-flicks.png);
-    background-position: 20px 37px;
+    background-image: url(promo-mwc.png);
+    background-position: 0px 0px;
     background-repeat: no-repeat;
     color: #484848;
     -webkit-transition: all 0.2s ease-in-out;
@@ -327,6 +298,32 @@
     white-space: nowrap;
 }
 
+#tabzilla-promo h4 {
+display:none;
+        text-shadow: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 46px;
+        line-height: 46px;
+        margin-bottom: 5px;
+        margin-left:-80px;
+        margin-top:-30px;
+    }
+    
+#tabzilla-promo span {
+            display: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            text-transform: none;
+            width: 150px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            line-height: 20px;
+            color:white;
+            margin-left:-80px;
+        }
+    
 #tabzilla-promo .snippet#tabzilla-promo-mobile a {
     background-image: url(promo-mobile.jpg);
     background-position: 0 0;
