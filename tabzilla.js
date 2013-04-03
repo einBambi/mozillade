@@ -529,7 +529,7 @@ Tabzilla.content =
     '<div id="tabzilla-contents">'
     + '  <div id="tabzilla-promo">'
     + '    <div class="snippet" id="tabzilla-promo-mwc-announce">'
-    + '    <a href="http://mozilla.org/en-US/firefox/partners/" class="container">'
+    + '    <a href="https://www.mozilla.org/de/firefox/partners/" class="container">'
     + '     <h4>Firefox OS debütierte</h4>'
 	 + '     <span>beim Mobile World Congress</span>'
     + '     </a>'

@@ -33,12 +33,12 @@
 			  <tr>
 			    <td>Dev Evangelism</td>
 			    <td>Florian Scholz</td>
-			    <td>TBD</td>
+			    <td>fs__florianscholz.com</td>
 			  </tr>
 			  <tr>
 			    <td>Marketing</td>
 			    <td>Sören Hentzschel</td>
-			    <td>cadeyrn__ymail.com</td>
+			    <td>kontakt__soeren-hentzschel.at</td>
 			  </tr>
 			  <tr>
 			    <td>Support</td>

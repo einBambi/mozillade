@@ -8,7 +8,7 @@
 		1 => array( 
 			'name' => 'Firefox-Chat', 
 			'btnlabel' => 'Betreten',
-			'url' => 'http://widget00.mibbit.com/?settings=ac94eecf36f16bd1854e7a27ad5d6562&server=irc.mozilla.org&channel=%23firefox.de&nick=',
+			'url' => 'http://widget00.mibbit.com/?settings=ac94eecf36f16bd1854e7a27ad5d6562&amp;server=irc.mozilla.org&amp;channel=%23firefox.de&amp;customprompt=Firefox-Chat%20betreten&amp;nick=',
 			'logo' => 'irc'),
 		2 => array(
 			'name' => 'Thunderbird',
@@ -18,7 +18,7 @@
 		3 => array( 
 			'name' => 'Thunderbird-Chat', 
 			'btnlabel' => 'Betreten',
-			'url' => 'https://widget00.mibbit.com/?settings=ac94eecf36f16bd1854e7a27ad5d6562&server=irc.mozilla.org&channel=%23thunderbird.de&customprompt=Thunderbird-Chat%20betreten&nick=',
+			'url' => 'https://widget00.mibbit.com/?settings=ac94eecf36f16bd1854e7a27ad5d6562&amp;server=irc.mozilla.org&amp;channel=%23thunderbird.de&amp;customprompt=Thunderbird-Chat%20betreten&amp;nick=',
 			'logo' => 'irc'),
 		4 => array( 
 			'name' => 'SeaMonkey', 
